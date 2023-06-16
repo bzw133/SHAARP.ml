@@ -19,12 +19,12 @@ extra_javascript:
   
 nav:
     - Home: index.md
-    - Getting started: install.md
+    - Install: install.md
+    - Getting started: getstarted.md
     - Methods: methods.md
     - Input Parameters: input.md
     - Output Results: output.md
     - Examples: examples.md
     - Frequently Asked Questions (FAQ): FAQ.md
-    - Table of Symbols: table.md
 
 theme: readthedocs
