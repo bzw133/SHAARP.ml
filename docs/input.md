@@ -26,7 +26,7 @@ This subpanel allows the user to provide the material properties and choose what
 The following sub-panels are visible when the `Set Material Properties` tab is selected in the `Functionality` sub-panel. 
 
 !!! note
-	Note: Please click on `Update` after specifying the inputs for the changes to take place. This includes any changes to the input parameters on any of the input sub panels.
+	Please click on `Update` after specifying the inputs for the changes to take place. This includes any changes to the input parameters on any of the input sub panels.
 
 #### Wavelength Setting
 
@@ -49,7 +49,7 @@ The following sub-panels are visible when the `Set Material Properties` tab is s
 
 ![casestudy](./img/casestudy.png)
 
-Crystal and optical properties of some common materials such as air, LiNbO<sub>3</sub> (LNO), KTiOPO4 (KTP), etc. are pre-defined for convenience. The user may just click the layer number and select any of the above to quickly apply the properties to the selected layer.  
+Crystal and optical properties of some common materials such as air, LiNbO<sub>3</sub> (LNO), KTiOPO<sub>4</sub> (KTP), etc. are pre-defined for convenience. The user may just click the layer number and select any of the above to quickly apply the properties to the selected layer.  
 
 #### Material thickness
 
@@ -81,7 +81,7 @@ To define the crystal orientation of the selected layer, one can use either the 
 Click `Update` to visualize the crystal orientation of the selected layer with respect to the lab coordinate system on the output panel as a 2D/3D schematic. 
 
 !!! note
-	Note: An error is shown if the Miller indices of the crystal surface plane is inconsistent with indices defining the normal to the plane of incidence. 
+	An error is shown if the Miller indices of the crystal surface plane is inconsistent with indices defining the normal to the plane of incidence. 
 
 #### Dielectric tensors
 
@@ -100,7 +100,7 @@ Click `Update` to visualize the crystal orientation of the selected layer with r
 -  In the case where certain components of the SHG tensor is known, click `analytical dij` and manually enter the known components. In this case, the partial analytical expression only involves the unknown symbolic components. 
 
 !!! note
-Note: Running SHG simulation with unknown SHG tensors and thicknesses causes the program to stall. In this case, quit the kernel and start over again.
+	Running SHG simulation with unknown SHG tensors and thicknesses causes the program to stall. In this case, quit the kernel and start over again.
 
 #### Material Properties Preset Values
 
@@ -112,18 +112,19 @@ To save a preset, first enter the crystal and optical properties of the layer. C
 
 To apply the preset values, first select the layer from the material selection sub-panel and then click the `Preset i` button to apply the properties stored in the i preset to the selected layer. `Clear Presets` removes all the saved preset information.
 
-Note: Presets save only the information related to the material and does not save the experimental settings such as wavelength, polarimetry setup or the experimental geometry.
+!!! note
+	Presets save only the information related to the material and does not save the experimental settings such as wavelength, polarimetry setup or the experimental geometry.
 
 !!! note
-	Note: Presets currently do not save the information across different sessions. 
+	Presets currently do not save the information across different sessions. 
 
 ### SHG Simulation
 
 !!! note
-	Note: Please click `Update` after providing the material inputs to save the multilayer. 
+	Please click `Update` after providing the material inputs to save the multilayer. 
 
 !!! note
-	Note: SHG simulation fails if symbolic expressions (for thickness and SHG tensor) are provided in the `Set Material Properties` tab.
+	SHG simulation fails if symbolic expressions (for thickness and SHG tensor) are provided in the `Set Material Properties` tab.
 
 The following sub-panels describe the required parameters for generating the polar plots, Fresnel coefficients and Maker fringes. 
 
@@ -153,7 +154,8 @@ Click the respective boxes to apply full multiple reflections, Jerphagnon-Kurtz 
 
 #### Fresnel coefficients collection settings 
 
-Note: This sub-panel is visible only if `Generate Fresnel Coefficients Plot` is checked in the `Calculation Controls` sub-panel.
+!!! note
+	This sub-panel is visible only if `Generate Fresnel Coefficients Plot` is checked in the `Calculation Controls` sub-panel.
 
 ![fresnel](./img/fresnel.png)
 
@@ -171,7 +173,8 @@ Note: This sub-panel is visible only if `Generate Maker Fringes Plot` is checked
 
 ### Partial Analytical Expressions
 
-Note: Ensure that either the thickness and/or the SHG tensor elements have been set to `analytical h` and/or `analytical dij` respectively in the `Set Material Properties` section before proceeding with the calculation of the analytical expressions.
+!!! note
+	Ensure that either the thickness and/or the SHG tensor elements have been set to `analytical h` and/or `analytical dij` respectively in the `Set Material Properties` section before proceeding with the calculation of the analytical expressions.
 
 ![partialanal](./img/partialanal.png)
 

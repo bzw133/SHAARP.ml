@@ -6,10 +6,7 @@
 **♯SHAARP**._ml_ is an open-source package for deriving and simulating both reflected and transmitted optical second harmonic generation (SHG) from a multi-layers heterostructure (_ml_), such as single crystals and thin films. Optical SHG describes the process where two photons of frequency $\omega$ interact with a nonlinear medium to create a photon at 2$\omega$, so called the SHG process.
 
 !!! note
-	The single interface package (**♯SHAARP**._si_) can be accessed using links below
-	[GitHub](https://github.com/Rui-Zu/SHAARP)
-	[Manual](https://shaarp.readthedocs.io/en/latest/)
-	[Tutorial Videos](https://www.youtube.com/watch?v=fr0RirVHXVc)
+		The single interface package (**♯SHAARP**._si_) can be accessed using links: [GitHub](https://github.com/Rui-Zu/SHAARP), [Manual](https://shaarp.readthedocs.io/en/latest/) and [Tutorial Videos](https://www.youtube.com/watch?v=fr0RirVHXVc)
 
 This package builds in the most general approach to both analytically and numerically solving the SHG response of various materials systems. The package is designed to handle arbitrary number of layers, number of SHG active mediums, crystal symmetry, arbitrary orientation, a complex dielectric function (complex refractive indices) and any polarization state of light.  Maker fringes and polarimetry, two most common SHG characterization approaches, are integrated into the package. 
 
