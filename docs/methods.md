@@ -11,8 +11,8 @@ The former geometry is commonly achieved with a rotating halfwave plate and fixe
 ### Maker fringes
 The other standard method is called Maker fringes which was developed by Maker, et al. in 1961.<sup>1</sup> Instead of making polarization states of light as variables, Maker fringes method fixes polarization states of light and record transmitted SHG intensities as a function of incident angles, as shown in **Figure 1f** and **1g**. The Maker fringes method is sensitive to crystal thickness, refractive indices and can be used to extract ratio among nonlinear susceptibilities. However, unlike SHG polarimetry that can be obtained using both transmission and reflection, the Maker fringes method is constrained in the transmission geometry.
 
->![MethodF1.png](img/MethodF1.png)
-Figure 1. Summary of experimental SHG setup and common characterization methods, including SHG polarimetry and Maker fringes. **a** Experimental setup for reflective and transmissive SHG measurement of a heterostructure. Red and blue waves suggest a pump beam at $\omega$ and signal beam at $2\omega$ frequency, separately. $(L_1,L_2,L_3)$ is the lab coordinate system. The orange and dark gray planes are the sample surface and plane of incidence ($L_1 - L_3$ plane).  $\varphi$ is the azimuthal angle. **b-c** _p_- and _s_- polarized SHG intensities as a function of incident fundamental polarization. **d-e** SHG intensities polarized both parallel and perpendicular to the incident polarization projected in $s - p$ plane.  **b,e** Relations of incident polarization and SHG polarization projected in $s - p$ plane. **c,f** SHG polar plots of GaAs (111) in the normal incident geometries using two experimental configurations described in panels **b** and **d**, respectively. **f**,**g** describes Maker fringes method and resulting Maker fringes pattern using 300 $\mu$m X-cut quartz. JK, HH and FRM refer to Jerphagnon & Kurtz's method<sup>2</sup>, Herman and Hayden's method<sup>3</sup> and full multiple reflection.
+![MethodF1.png](img/MethodF1.png)
+	**Figure 1. Summary of experimental SHG setup and common characterization methods, including SHG polarimetry and Maker fringes.** **a** Experimental setup for reflective and transmissive SHG measurement of a heterostructure. Red and blue waves suggest a pump beam at $\omega$ and signal beam at $2\omega$ frequency, separately. $(L_1,L_2,L_3)$ is the lab coordinate system. The orange and dark gray planes are the sample surface and plane of incidence ($L_1 - L_3$ plane).  $\varphi$ is the azimuthal angle. **b-c** _p_- and _s_- polarized SHG intensities as a function of incident fundamental polarization. **d-e** SHG intensities polarized both parallel and perpendicular to the incident polarization projected in $s - p$ plane.  **b,e** Relations of incident polarization and SHG polarization projected in $s - p$ plane. **c,f** SHG polar plots of GaAs (111) in the normal incident geometries using two experimental configurations described in panels **b** and **d**, respectively. **f**,**g** describes Maker fringes method and resulting Maker fringes pattern using 300 $\mu$m X-cut quartz. JK, HH and FRM refer to Jerphagnon & Kurtz's method<sup>2</sup>, Herman and Hayden's method<sup>3</sup> and full multiple reflection.
 
 
 ## Coordinate System
@@ -33,8 +33,8 @@ $$
 
 where $a_{LZ}$ is the rotation matrix from ZCS to the LCS and $a_{ZP}$ is the rotation matrix from the PCS to the ZCS, respectively.
 
->![MethodF2.png](img/MethodF2.png)
->Figure 2. Schematic of four coordinate systems used for a monoclinic structure. $(L_1,L_2,L_3)$, $(a,b,c)$, $(Z_1,Z_2,Z_3)$, and $(Z_1^{Principal},Z_2^{Principal},Z_3^{Principal})$ are the lab, crystallographic, crystal physics, and principal coordinate systems, respectively. Only the crystallographic coordinate system is non-orthogonal.
+![MethodF2.png](img/MethodF2.png)
+>**Figure 2. Schematic of four coordinate systems used for a monoclinic structure.** $(L_1,L_2,L_3)$, $(a,b,c)$, $(Z_1,Z_2,Z_3)$, and $(Z_1^{Principal},Z_2^{Principal},Z_3^{Principal})$ are the lab, crystallographic, crystal physics, and principal coordinate systems, respectively. Only the crystallographic coordinate system is non-orthogonal.
 
 
 
@@ -56,8 +56,8 @@ $$
 
 where $\varepsilon_{L_iL_j}^{\omega}$ represents the dielectric permittivity tensor at frequency $\omega$ in the LCS, and the $\mu^{\omega}$ represents the magnetic permeability in the LCS at $\omega$. Typically, $\mu^{\omega}\approx\mu_0$, the vacuum permittivity is assumed. In general, the anisotropic dielectric permittivity and magnetic permeability tensors of the medium are not diagonalized in the lab coordinates (LCS). Therefore, the non-collinearity between $\pmb{E}$ and $\pmb{D}$, as well as $\pmb{B}$ and $\pmb{H}$ results in two non-overlapping orthogonal relations ($\pmb{k}$, $\pmb{D}$, $\pmb{B}$) and ($\pmb{S}$, $\pmb{E}$, $\pmb{H}$). Here, $\pmb{k}$, $\pmb{D}$, $\pmb{B}$, $\pmb{S}$, $\pmb{E}$, and $\pmb{H}$ are wavevector, dielectric displacement, magnetic induction, Poynting vector, electric field and magnetic field intensity. Note that $\pmb{E}$ and $\pmb{H}$ are not necessarily normal to the wavevector $\pmb{k}$ inside the medium.
 
->![MethodF3.png](img/MethodF3.png)
->Figure 3. Schematic example of different waves at both $\omega$ and $2\omega$ frequencies for the specific measurement geometry where the optic axis of an uniaxial crystal is chosen to lie in the incidence plane. (Note that ♯SHAARP can in general handle an arbitrary orientation of the optic axes with respect to the incidence plane).  The green and blue rays are homogeneous waves at $\omega$ and $2\omega$ frequency. The red ray are the inhomogeneous waves at $2\omega$.
+![MethodF3.png](img/MethodF3.png)
+>**Figure 3. Schematic example of different waves at both $\omega$ and $2\omega$ frequencies for the specific measurement geometry where the optic axis of an uniaxial crystal is chosen to lie in the incidence plane.** (Note that ♯SHAARP can in general handle an arbitrary orientation of the optic axes with respect to the incidence plane).  The green and blue rays are homogeneous waves at $\omega$ and $2\omega$ frequency. The red ray are the inhomogeneous waves at $2\omega$.
 
 The second-order nonlinear susceptibility induces a nonlinear polarization and thus radiates nonlinear source waves at $2\omega$ frequency. The source wave at $2\omega$ frequency can be written as,
 
@@ -119,7 +119,7 @@ $$
 $$
 
 where $\pmb{P}_{Mi}^{2\omega}$, $\pmb{E}_{Mi}^{\omega}$, $\varepsilon_0$, $\chi^{(2)}$, $\pmb{k}^S⋅$ and $\pmb{r}$ are nonlinear polarization, fundamental electric field, vacuum dielectric permittivity, second-order nonlinear optical susceptibility, wave vector of the source wave, and displacement vector, respectively. Since arbitrary layers can be SHG active, thus $\pmb{P}_{Mi}^{2\omega}$ will appear when the $i^{th}$ layer is SHG active, as denoted by the subscript Mi. It is important to note that during the propagation of fundamental fields, the nonlinear polarization is generated throughout the entire optical path of $\pmb{E}_{Mi}^{\omega}$, according to **equation (7)**. When the multiple reflections of nonlinear polarization are considered, the interference of nonlinear polarization can thus be obtained by considering the multiple reflections of $\pmb{E}_{Mi}^{\omega}$.
->![MethodF4.png](img/MethodF4.png)
+![MethodF4.png](img/MethodF4.png)
 >**Figure 4. Ray diagram of SHG in a heterostructure.** The ray diagram of birefringent linear and nonlinear waves in the heterostructure. The M2 layer is set to be SHG active while others remain SHG inactive for more explicit demonstration. Both $\pmb{k}^{eFeB,2\omega}$ and $\pmb{k}^{oFoB,2\omega}$ are propagating parallel to layers. Different colors are used to distinguish different waves and are not indicative of their frequencies. ($L_{1},L_{2},L_{3}$) is the lab coordinate system. Red and blue rays are the fundamental beam at $\omega$ and SHG waves at $2\omega$, respectively. $\theta_{M1}^{i,\omega}$ is the incident angle, and the plane of incidence(PoI) is indicated by the $L_{1}-L_{3}$ plane. The layers are subsequently labeled from M1 to Mn, where M1 and Mn are air.
 
 Unlike single interface model where only forward propagatssing waves are involved, both forward and backward propagating waves are included for multilayer. Fully accounting all waves will take multiple reflections into account. The anisotropic three-wave mixing phenomena is revealed in **equation (7)**, where material anisotropy is taken into account. In each SHG active medium (M*i*), the forward and backward nonlinear polarizations can thus be identified as $\pmb{k}^{S,2\omega}=2\pmb{k}^{eF,\omega}$, $2\pmb{k}^{oF,\omega}$, $\pmb{k}^{eF,\omega}+\pmb{k}^{oF,\omega}$, $2\pmb{k}^{eB,\omega}$, $2\pmb{k}^{oB,\omega}$, $\pmb{k}^{eB,\omega}+\pmb{k}^{oB,\omega}$, $\pmb{k}^{eF,\omega}+\pmb{k}^{eB,\omega}$, $\pmb{k}^{eF,\omega}+\pmb{k}^{oB,\omega}$, $\pmb{k}^{oF,\omega}+\pmb{k}^{eB,\omega}$, and $\pmb{k}^{oF,\omega}+\pmb{k}^{oB,\omega}$. The wavevectors for the ten nonlinear polarizations in the $i^{th}$ layer are thus denoted as ($\pmb{k}^{eFeF,2\omega}$, $\pmb{k}^{oFoF,2\omega}$, $\pmb{k}^{eFoF,2\omega}$, $\pmb{k}^{eBeB,2\omega}$, $\pmb{k}^{oBoB,2\omega}$, $\pmb{k}^{eBoB,2\omega}$, $\pmb{k}^{eFeB,2\omega}$, $\pmb{k}^{eFoB,2\omega}$, $\pmb{k}^{oFeB,2\omega}$, $\pmb{k}^{oFoB,2\omega}$$)_{Mi}$ for clarity, as shown in **Figure 4**. The superscripts e, o, F and B are used to describe the different combinations of electric fields forming nonlinear polarizations, where e, o, F and B stand for extraordinary, ordinary, forward propagating and backward propagating waves. For example, a nonlinear polarization ($\pmb{P}^{eFoB,2\omega}$) is formed when a forward propagating extraordinary wave ($\pmb{k}^{eF,\omega}$) and a backward propagating ordinary wave ($\pmb{k}^{oB,\omega}$) are combined. However, the wave mixing terms containing both forward and backward waves are often dropped or ignored, such as $\pmb{k}^{eFeB,2\omega}$ and $\pmb{k}^{oFoB,2\omega}$ due to a large phase mismatch. lthough these terms form standing waves propagating parallel to the layers, the formed standing waves at both the top and bottom surfaces of each layer still contribute to the boundary conditions. For example, a nonlinear polarization ($\pmb{P}^{eFeB,2\omega}$) can be generated by a mixture of $\pmb{k}^{eF,\omega}$ and $\pmb{k}^{eB,\omega}$ at top or bottom surfaces leading to additional components in the boundary conditions.
@@ -133,13 +133,13 @@ Boundary conditions are important to accurately determine the propagation direct
 
 $$
 \begin{align}
-\pmb{k}^{i,\omega}_{L_1}=\pmb{k}^{R,\omega}_{L_1}=\pmb{k}^{T,e,\omega}_{L_1}=\pmb{k}^{T,o,\omega}_{L_1}\hspace{3em}(7)
+k^{i,\omega}_{L_1}=k^{R,\omega}_{L_1}=k^{T,e,\omega}_{L_1}=k^{T,o,\omega}_{L_1}\hspace{3em}(7)
 \end{align}
 $$
 
 $$
 \begin{align}
-\pmb{k}^{R,2\omega}_{L_1}=\pmb{k}^{S,2\omega}_{L_1}=\pmb{k}^{T,e,2\omega}_{L_1}=\pmb{k}^{T,o,2\omega}_{L_1}\hspace{3em}(8)
+k^{R,2\omega}_{L_1}=k^{S,2\omega}_{L_1}=k^{T,e,2\omega}_{L_1}=k^{T,o,2\omega}_{L_1}\hspace{3em}(8)
 \end{align}
 $$
 
@@ -234,7 +234,7 @@ where $\phi$ is the phase difference for a forward wave propagating from top to
 ## Outline of ♯SHAARP
 
 ### Single Interface
-A flowchart illustrating the procedure for solving the equations and boundary conditions for the $\omega$ and $2\omega$ waves mentioned above is presented in **Figure 5.** The [table of symbols](table.md) summarizes all the relevant input and output variables in ♯SHAARP. The two refracted linear waves are described by solving **Eq. (2)**. Their actual field strengths can be obtained by using the boundary conditions at the fundamental frequency, $\omega$. Given **Eqs. 3** and **4**, two homogeneous waves and three inhomogeneous waves at $2\omega$ can be uniquely determined. Following the boundary condition analysis at $2\omega$, an analytical equation for the second harmonic response can be derived and used for polar plots simulations as well as for fitting experimental polar plots and extracting intrinsic SHG susceptibilities.
+A flowchart illustrating the procedure for solving the equations and boundary conditions for the $\omega$ and $2\omega$ waves mentioned above is presented in **Figure 5.** The two refracted linear waves are described by solving **Eq. (2)**. Their actual field strengths can be obtained by using the boundary conditions at the fundamental frequency, $\omega$. Given **Eqs. 3** and **4**, two homogeneous waves and three inhomogeneous waves at $2\omega$ can be uniquely determined. Following the boundary condition analysis at $2\omega$, an analytical equation for the second harmonic response can be derived and used for polar plots simulations as well as for fitting experimental polar plots and extracting intrinsic SHG susceptibilities.
 
 >![MethodF5.png](img/MethodF5.png)
 >**Figure 5. Flowchart illustrating the key steps in deriving the polarized second harmonic fields generated by a nonlinear medium.**

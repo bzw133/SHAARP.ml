@@ -2,7 +2,8 @@
 
 The output panel occupies the major part of the graphical interface. The content shown on the panel depends on the selected functionality. The possible outputs for the various functionalities are detailed below.
 
-Note: Please click on `Update` on the top right corner after specifying the inputs for the changes to take place. 
+!!! note
+	Please click on `Update` on the top right corner after specifying the inputs for the changes to take place. 
 
 ### Set Material Properties
 
@@ -38,7 +39,8 @@ The sub-panel shows the polar plots of the reflected and transmitted intensities
 
 #### Fresnel Coefficients Figure
 
-Note: This sub-panel is available only if `Generate Fresnel Coefficients Plot` is checked in the `Calculation Controls` in the input panel.
+!!! note
+	This sub-panel is available only if `Generate Fresnel Coefficients Plot` is checked in the `Calculation Controls` in the input panel.
 
 ![fresnel_op](./img/fresnel_op.png)
 
@@ -46,7 +48,8 @@ A plot of the calculated Fresnel coefficients in steps of the provided step size
 
 #### Maker Fringes Figure
 
-Note: This sub-panel is available only if `Generate Maker Fringes Plot` is checked in the `Calculation Controls` found in the input panel.
+!!! note
+	This sub-panel is available only if `Generate Maker Fringes Plot` is checked in the `Calculation Controls` found in the input panel.
 
 ![makerfringes_op](./img/makerfringes_op.png)
 

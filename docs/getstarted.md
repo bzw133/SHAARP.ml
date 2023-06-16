@@ -94,7 +94,7 @@ Now you have finished a quick tutorial on the input panels and performing the SH
 - The new plots are Fresnel Transmittance and Reflectance, and Maker fringes plot with SHG polarization parallel and perpendicular to the analyzer setting.
 - Note: The previous simulation results can still be accessed by clicking arrows at left to the Figures name, such as "Polar Plots"
 
-**Now you have obtained your first Fresnel plot and Maker fringes plots of the LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) single crystal. Next, let’s explore various polarization settings for SHG simulations.
+**Now you have obtained your first Fresnel plot and Maker fringes plots of the LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) single crystal. Next, let’s explore various polarization settings for SHG simulations.**
 
 #### Polarization Settings
 - The definition of the incident polarization (at frequency $\omega$) is given as $E=(E_p,E_s)=E_0(\cos\varphi, \sin\psi e^{i\Delta\delta} )$, where $E_p$ and $E_s$ are the _p_ and _s_ polarization components that are, respectively, parallel to and perpendicular to the PoI. The PoI is a plane formed by the incident wavevector, $\pmb{k}^{\omega}$, and the normal to the crystal surface. The polarization of the SHG wave at frequency $2\omega$ is measured using a linear polarizer at an angle $\psi$, where $\psi=0^o$ and $90^o$ corresponds to the _p_-polarized and _s_-polarized SHG light, respectively.
