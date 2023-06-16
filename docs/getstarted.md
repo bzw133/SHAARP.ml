@@ -1,19 +1,8 @@
 # Getting Started with ♯SHAARP._ml_
 
-## Open the ♯SHAARP._ml_.nb in the _Mathematica®_ software on your computer
-1. Unzip the file and open the `SHAARP.ml_V#.nb`. 
-	- Note: It is recommended to keep all the files in the same directory to access the full features of `♯SHAARP.ml`
-	- Make sure that the Dynamic Evaluation has been enabled (it is enabled by default).
-2. From the menu `Evaluate` → `Evaluate Notebook`
-	- Note: This process will clear out all the definitions from other notebooks and enable the “Notation” package for the analytical solutions.
-3. After ~10s waiting time for initialization, you will see the main panel: 
-	- If warning messages are shown, please re-evaluate the notebook following [Warning message of SHAARP](<FAQ.md#Warning message of SHAARP>)
-   ![Interface.png](<img/install-GUI.png>)
-4. The main panel contains four parts
-	- [Input panels](input.md) specify all the input parameters 
-	- [Output panels](output.md) give the output diagrams and equations 
-	- Progress bar show the progress after clicking the Update button 
-	- Update button execute the program by clicking it  
+## Open and initialize the ♯SHAARP._ml_.nb on your computer
+
+- See [Installation and Initialization of SHAARP._ml_](<install.md#Installation and Initialization of SHAARP._ml_>)
 
 ## Try preset demos
 
