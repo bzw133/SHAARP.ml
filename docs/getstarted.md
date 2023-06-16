@@ -1,8 +1,19 @@
 # Getting Started with ♯SHAARP._ml_
 
-## Open and initialize the ♯SHAARP._ml_.nb on your computer
-
-- See [Installation and Initialization of SHAARP._ml_](<install.md#Installation and Initialization of SHAARP._ml_>)
+## Open the ♯SHAARP._ml_.nb in the _Mathematica®_ software on your computer
+1. Unzip the file and open the `SHAARP.ml_V#.nb`. 
+	- Note: It is recommended to keep all the files in the same directory to access the full features of `♯SHAARP.ml`
+	- Make sure that the Dynamic Evaluation has been enabled (it is enabled by default).
+2. From the menu `Evaluate` → `Evaluate Notebook`
+	- Note: This process will clear out all the definitions from other notebooks and enable the “Notation” package for the analytical solutions.
+3. After ~10s waiting time for initialization, you will see the main panel: 
+	- If warning messages are shown, please re-evaluate the notebook following [Warning message of SHAARP](<FAQ.md#Warning message of SHAARP>)
+   ![Interface.png](<img/install-GUI.png>)
+4. The main panel contains four parts
+	- [Input panels](input.md) specify all the input parameters 
+	- [Output panels](output.md) give the output diagrams and equations 
+	- Progress bar show the progress after clicking the Update button 
+	- Update button execute the program by clicking it  
 
 ## Try preset demos
 
@@ -83,7 +94,7 @@ Now you have finished a quick tutorial on the input panels and performing the SH
 - The new plots are Fresnel Transmittance and Reflectance, and Maker fringes plot with SHG polarization parallel and perpendicular to the analyzer setting.
 - Note: The previous simulation results can still be accessed by clicking arrows at left to the Figures name, such as "Polar Plots"
 
-**Now you have obtained your first Fresnel plot and Maker fringes plots of the LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) single crystal. Next, let’s explore various polarization settings for SHG simulations.**
+**Now you have obtained your first Fresnel plot and Maker fringes plots of the LiNbO<sub>3</sub> (11<span style="text-decoration:overline">2</span>0) single crystal. Next, let’s explore various polarization settings for SHG simulations.
 
 #### Polarization Settings
 - The definition of the incident polarization (at frequency $\omega$) is given as $E=(E_p,E_s)=E_0(\cos\varphi, \sin\psi e^{i\Delta\delta} )$, where $E_p$ and $E_s$ are the _p_ and _s_ polarization components that are, respectively, parallel to and perpendicular to the PoI. The PoI is a plane formed by the incident wavevector, $\pmb{k}^{\omega}$, and the normal to the crystal surface. The polarization of the SHG wave at frequency $2\omega$ is measured using a linear polarizer at an angle $\psi$, where $\psi=0^o$ and $90^o$ corresponds to the _p_-polarized and _s_-polarized SHG light, respectively.
