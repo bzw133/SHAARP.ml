@@ -2,13 +2,14 @@
 
 The output panel occupies the major part of the graphical interface. The content shown on the panel depends on the selected functionality. The possible outputs for the various functionalities are detailed below.
 
-Note: Please click on `Update` on the top right corner after specifying the inputs for the changes to take place. 
+!!! note
+	Please click on `Update` on the top right corner after specifying the inputs for the changes to take place. 
 
 ### Set Material Properties
 
 ![multilayer](./img/multilayer.png)
-
--  The top figure describes the multilayer geometry including the background medium as the top-most and bottom-most layers. The layer name, Miller indices defining the crystal surface plane [:question: probably doesn't change if one uses crystal physics directions​] , point group and thickness is displayed for each layer.
+[comment: Akash, please update the figure here and the name of quartz has been updated]
+-  The top figure describes the multilayer geometry including the background medium as the top-most and bottom-most layers. The layer name, Miller indices defining the crystal surface plane, point group and thickness is displayed for each layer.
 
 ![zilcs](./img/zilcs.png)
 
@@ -31,13 +32,15 @@ The ellipticity of the incident, reflected and transmitted beams are presented i
 
 #### Polar Plots
 
+[comment: Akash - Please update the polar plot figure after I include the varphi ticks]
 ![polar](./img/polar.png)
 
-The sub-panel shows the polar plots of the reflected and transmitted intensities of the second harmonic wave as a function of the incident polarization angle $\varphi$. $\psi$ refers to the analyzer angle. [:question: show \varphi ticks ​in the polar plot]
+The sub-panel shows the polar plots of the reflected and transmitted intensities of the second harmonic wave as a function of the incident polarization angle $\varphi$. $\psi$ refers to the analyzer angle.
 
 #### Fresnel Coefficients Figure
 
-Note: This sub-panel is available only if `Generate Fresnel Coefficients Plot` is checked in the `Calculation Controls` in the input panel.
+!!! note
+	This sub-panel is available only if `Generate Fresnel Coefficients Plot` is checked in the `Calculation Controls` in the input panel.
 
 ![fresnel_op](./img/fresnel_op.png)
 
@@ -45,7 +48,8 @@ A plot of the calculated Fresnel coefficients in steps of the provided step size
 
 #### Maker Fringes Figure
 
-Note: This sub-panel is available only if `Generate Maker Fringes Plot` is checked in the `Calculation Controls` found in the input panel.
+!!! note
+	This sub-panel is available only if `Generate Maker Fringes Plot` is checked in the `Calculation Controls` found in the input panel.
 
 ![makerfringes_op](./img/makerfringes_op.png)
 
