@@ -13,15 +13,15 @@ We start by discussing the experimental details before proceeding to simulate th
 
 - Set the wavelength to 0.8 $\mu$m (800 nm) from the wavelength setting sub-panel.
 
-- In the `material selection` sub-panel, type 4 for the number of layers. This includes the background (air) on the top and bottom as two distinct layers. 
-- Click on `1` to edit the first layer. From the case studies and examples sub-panel below, click `Air`. This should set the first layer to air. Set the last layer to air by clicking on `4` in the material selection sub-panel and clicking `Air` from the `case study` sub-panel. 
+- In the `Material Selection` sub-panel, type 4 for the number of layers. This includes the background (air) on the top and bottom as two distinct layers. 
+- Click on `1` to edit the first layer. From the case studies and examples sub-panel below, click `Air`. This should set the first layer to air. Set the last layer to air by clicking on `4` in the material selection sub-panel and clicking `Air` from the `Case Study` sub-panel. 
 
 !!! note 
 	Note that air is assumed to be a dispersionless isotropic linear medium with $\infty \infty m$ point group.
 
 - Now click on `2` to edit the first layer of the multilayer. Give it a suitable name, say "Z-cut quartz". The crystal and optical properties of quartz are already pre-defined and saved as an example. To apply these properties, click on `Quartz (001)` from the case study sub-panel.
 
-- From the `material thickness` sub-panel, enter 121.2 ($\mu$m) to set the thickness of the quartz slab. Since the crystal and optical properties of quartz are already defined, nothing needs to be changed in the crystal structure, crystal orientation, dielectric tensors and SHG tensor sub-panels.
+- From the `Material thickness` sub-panel, enter 121.2 ($\mu$m) to set the thickness of the quartz slab. Since the crystal and optical properties of quartz are already defined, nothing needs to be changed in the crystal structure, crystal orientation, dielectric tensors and SHG tensor sub-panels.
 !!! note
 	   Note: In general, the user would need to manually enter the crystal and optical properties of the layer. See the Input Panel section of the manual for more details and instructions.
 
@@ -67,9 +67,9 @@ In this section, we show how two SHG active layers can be used to determine the 
 !!! note
 	Note that air is assumed to be a dispersionless isotropic linear medium with $\infty \infty m$ point group.
 
-- Now click on `2` to edit the first layer of the multilayer. Give it a suitable name, say "LNO". The crystal structure and optical properties of LiNbO<sub>3</sub> are already pre-defined and saved as an example. To apply these properties, click on LiNbO<sub>3</sub> (0001) from the `case study` sub-panel.
+- Now click on `2` to edit the first layer of the multilayer. Give it a suitable name, say "LNO". The crystal structure and optical properties of LiNbO<sub>3</sub> are already pre-defined and saved as an example. To apply these properties, click on LiNbO<sub>3</sub> (0001) from the `Case Study` sub-panel.
 
-- From the material thickness sub-panel, enter 100 ($\mu$m) to set the thickness of the LiNbO<sub>3</sub> slab. Since the crystal structure and optical properties of LiNbO<sub>3</sub> are already defined, nothing needs to be changed in the crystal structure, dielectric tensors and SHG tensor sub-panels. 
+- From the `Material thickness` sub-panel, enter 100 ($\mu$m) to set the thickness of the LiNbO<sub>3</sub> slab. Since the crystal structure and optical properties of LiNbO<sub>3</sub> are already defined, nothing needs to be changed in the crystal structure, dielectric tensors and SHG tensor sub-panels. 
 
 !!! note
 	In general, the user would need to manually enter the crystal and optical properties of the layer. See the Input Panel section of the manual for more details and instructions.

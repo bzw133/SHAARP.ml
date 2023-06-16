@@ -8,7 +8,9 @@ The output panel occupies the major part of the graphical interface. The content
 ### Set Material Properties
 
 ![multilayer](./img/multilayer.png)
-[comment: Akash, please update the figure here and the name of quartz has been updated]
+
+
+
 -  The top figure describes the multilayer geometry including the background medium as the top-most and bottom-most layers. The layer name, Miller indices defining the crystal surface plane, point group and thickness is displayed for each layer.
 
 ![zilcs](./img/zilcs.png)
@@ -31,8 +33,6 @@ The figure on the top-right shows the fundamental incident wavevector $k^{\omega
 The ellipticity of the incident, reflected and transmitted beams are presented in the figure at the bottom-left corner while the measurement geometry is described in the figure on the bottom-right.
 
 #### Polar Plots
-
-[comment: Akash - Please update the polar plot figure after I include the varphi ticks]
 ![polar](./img/polar.png)
 
 The sub-panel shows the polar plots of the reflected and transmitted intensities of the second harmonic wave as a function of the incident polarization angle $\varphi$. $\psi$ refers to the analyzer angle.
