@@ -17,8 +17,8 @@ This subpanel allows the user to provide the material properties and choose what
 -  The `2D(3D) Schematics` (available only when `SHG Simulation` or `Set Material Properties` is selected) shows the multilayer in real space as an interactive 2D(3D) figure on the output panel. 
 
 !!! note
-	 Important Note: Please click on `Update` on the top right corner after specifying the inputs for the changes to take place on the output panel. This includes any changes to the input parameters on any of the input sub-panels.
-  
+	 Important Note: Please click on any of the `Update` buttons after specifying the inputs for the changes to take place on the output panel. This includes any changes to the input parameters on any of the input sub-panels.
+
 -  `Partial Analytical Expressions` derives the SHG reflectance and transmittance in terms of unknown layer thicknesses and SHG tensor elements provided as symbolic variables in the `Set Material Properties` tab.
 
 ### Set Material Properties
@@ -35,15 +35,13 @@ The following sub-panels are visible when the `Set Material Properties` tab is s
 -  Enter the wavelength (in vacuum) of the fundamental light incident on the multilayer.
 -  The value is to be entered in $\mu$m.
 
-#### Material Selection
+#### Layer Selection
 
 ![materials](./img/materials.png)
 
--  Number of Layers refers to the number of layers that the multilayer is made up of and includes the background medium (usually air) as a distinct layer.
--  The first and last layer correspond to the background medium (air by default) and is assumed to have infinite thickness. 
+-  Number of Layers refers to the number of layers that the multilayer is made up of.
 -  Each layer can be assigned a name by the user in the text box provided.
--  Air is already provided as a preset with $\infty \infty m$ point group and is taken as a dispersionless isotropic linear medium such that the dielectric tensors $\epsilon^{\omega}_{ij} = \epsilon^{2\omega}_{ij} = \delta_{ij}$ and $d_{ijk}=0$
--   Select the material (layer number) whose properties need to be modified. 
+-   Select the layer number whose properties need to be modified. 
 
 #### Case Study and Examples
 
@@ -51,13 +49,12 @@ The following sub-panels are visible when the `Set Material Properties` tab is s
 
 Crystal and optical properties of some common materials such as air, LiNbO<sub>3</sub> (LNO), KTiOPO<sub>4</sub> (KTP), etc. are pre-defined for convenience. The user may just click the layer number and select any of the above to quickly apply the properties to the selected layer.  
 
-#### Material thickness
+#### Layer thickness
 
 ![thickness](./img/thickness.png)
 
 -  Set the layer thickness in $\mu$m.
 -  In case of partial analytical expressions, click on `analytical h` to assign the layer `i` an unknown thickness (`hi` by default) where `i` is the layer number selected in the `Materials Selection` sub-panel.
--  The first and last layer have infinite thickness. 
 
 #### Crystal Structure
 
@@ -96,13 +93,13 @@ Click `Update` to visualize the crystal orientation of the selected layer with r
 ![shgtensor](./img/shgtensor.png)
 
 -  Enter the components of the SHG tensor $d_{ij}$ (expressed in Voigt notation) in units of pm/V​. Note that constraints due to the point group symmetry are automatically imposed on the SHG tensor. 
--  Click `analytical dij` if interested in partial analytical expressions involving unknown SHG tensor components. The components are labelled as `dij` as default. The values are assumed to be in units of pm/V. 
+-  Click `analytical dij` if interested in partial analytical expressions involving unknown SHG tensor components. The components are labelled as `dij` by default. The values are assumed to be in units of pm/V. 
 -  In the case where certain components of the SHG tensor is known, click `analytical dij` and manually enter the known components. In this case, the partial analytical expression only involves the unknown symbolic components. 
 
 !!! note
 	Running SHG simulation with unknown SHG tensors and thicknesses causes the program to stall. In this case, quit the kernel and start over again.
 
-#### Material Properties Preset Values
+#### Layer Properties Preset Values
 
 Apart from the already provided presets in the case study sub-panel, the user may define the film thickness, crystal structure, orientation, dielectric tensors (at fundamental and second harmonic frequencies) and SHG tensors for a material of their choice and save it as a preset. 
 
@@ -132,13 +129,13 @@ The following sub-panels describe the required parameters for generating the pol
 
 ![calccontrols](./img/calccontrols.png)
 
-Check if a plot of Fresnel coefficients and/or Maker fringes as a function of incident angle is to be generated
+Check if a plot of Fresnel coefficients and/or Maker fringes as a function of incident angle is to be generated.
 
 #### Assumptions
 
 ![assumptions](./img/assumptions.png)
 
-Click the respective boxes to apply full multiple reflections, Jerphagnon-Kurtz or Herman-Hayden assumptions for the calculation of the polar plots, Fresnel coefficients and/or Maker fringes.
+Click the respective boxes to apply full multiple reflections, Jerphagnon-Kurtz or Herman-Hayden assumptions for the calculation of the polar plots, Fresnel coefficients and/or Maker fringes. In case of full multiple reflections, further specify if backward waves need to be considered, and if so, whether to consider standing waves or not.
 
 #### Polarimetry Settings
 
@@ -146,9 +143,9 @@ Click the respective boxes to apply full multiple reflections, Jerphagnon-Kurtz 
 
 -  Incident angle $\theta^i$ specifies the angle (in degree) between the incident ray and the normal to the incident surface. The user may either manually enter a value between 0$^{\circ}$ and 90$^{\circ}$ in the box, or use the slider to set the required value. Some commonly used angles are also provided; click the respective angle to set it.
 -  The incident electric field vector may be characterized by the polarization angle $\varphi$ and the ellipticity $\Delta \delta$ (both in degrees).
--  $\varphi=0^{\circ}$ corresponds to p polarized light while $\varphi = 90^{\circ}$ corresponds to s polarization. With respect to the lab coordinate system,  $\varphi=90^{\circ}$ points in the direction of $+L_2$.
 -  The ellipticity $\Delta \delta$ may be manually set by entering a value (in degree) between 0$^{\circ}$ and 360$^{\circ}$ in the provided box or by dragging the slider. 
 -  Depending on the measurement setup, one may choose either a rotating polarizer or a fixed polarizer. In case of the latter, the polarization angle $\varphi$ (in degree) may be entered by providing a value between 0$^{\circ}$ and 360$^{\circ}$ in the box, or by dragging the slider. Some commonly used angles are also provided.
+-  $\varphi=0^{\circ}$ corresponds to p polarized light while $\varphi = 90^{\circ}$ corresponds to s polarization. With respect to the lab coordinate system,  $\varphi=90^{\circ}$ points in the direction of $+L_2$.
 -  Similarly, either a rotating analyzer or a fixed analyzer setting may be used depending on the optical setup. The angle, if required, is set similar to as described above. 
 -  For a rotating polarizer, rotating analyzer setup, the analyzer-polarizer offset angle may be entered (in degree).
 

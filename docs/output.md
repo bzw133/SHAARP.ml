@@ -9,9 +9,7 @@ The output panel occupies the major part of the graphical interface. The content
 
 ![multilayer](./img/multilayer.png)
 
-
-
--  The top figure describes the multilayer geometry including the background medium as the top-most and bottom-most layers. The layer name, Miller indices defining the crystal surface plane, point group and thickness is displayed for each layer.
+-  The top figure describes the multilayer geometry. The layer name, Miller indices defining the crystal surface plane, point group and thickness is displayed for each layer.
 
 ![zilcs](./img/zilcs.png)
 
@@ -60,5 +58,12 @@ Plots of the calculated SHG intensity $I^{2 \omega}(\theta^i, \varphi, \psi)$ an
 ![partial_op](./img/partial_op.png)
 
 -  This panel contains the partial analytical expressions of the SHG reflectance and transmittance as a function of the polarizer angle $\varphi$ and the unknown parameters (thickness and SHG tensor) as provided in the `Set Material Properties` tab in the input panel.
--  One may copy the derived analytical expressions by clicking on the `Copy` button.
+-  One may copy the derived analytical expressions by clicking on the `Copy` button or save the expression to a `.mx` file by clicking `Export`.
+
+
+!!! note
+	In some cases, the derived expressions are too long to be displayed. In this case, the user can still click `Copy` to copy the full expression which may be pasted in a Mathematica® notebook.
+
+!!! note
+	The derived expressions are unsimplified; use `Simplify[]` or `FullSimplify[]`to simplify these expressions after copying.
 
