@@ -17,7 +17,7 @@ This subpanel allows the user to provide the material properties and choose what
 -  The `2D(3D) Schematics` (available only when `SHG Simulation` or `Set Material Properties` is selected) shows the multilayer in real space as an interactive 2D(3D) figure on the output panel. 
 
 !!! note
-	 Important Note: Please click on any of the `Update` buttons after specifying the inputs for the changes to take place on the output panel. This includes any changes to the input parameters on any of the input sub-panels.
+	 Please click on any of the `Update` buttons after specifying the inputs for the changes to take place on the output panel. This includes any changes to the input parameters on any of the input sub-panels.
 
 -  `Partial Analytical Expressions` derives the SHG reflectance and transmittance in terms of unknown layer thicknesses and SHG tensor elements provided as symbolic variables in the `Set Material Properties` tab.
 
@@ -93,7 +93,7 @@ Click `Update` to visualize the crystal orientation of the selected layer with r
 ![shgtensor](./img/shgtensor.png)
 
 -  Enter the components of the SHG tensor $d_{ij}$ (expressed in Voigt notation) in units of pm/V​. Note that constraints due to the point group symmetry are automatically imposed on the SHG tensor. 
--  Click `analytical dij` if interested in partial analytical expressions involving unknown SHG tensor components. The components are labelled as `dij` by default. The values are assumed to be in units of pm/V. 
+-  Click `analytical dij` if interested in partial analytical expressions involving unknown SHG tensor components. The components are labelled as `dijmk` by default (here, `k` refers to the layer number). The values are assumed to be in units of pm/V. 
 -  In the case where certain components of the SHG tensor is known, click `analytical dij` and manually enter the known components. In this case, the partial analytical expression only involves the unknown symbolic components. 
 
 !!! note
@@ -175,6 +175,6 @@ Note: This sub-panel is visible only if `Generate Maker Fringes Plot` is checked
 
 ![partialanal](./img/partialanal.png)
 
--  Check the assumptions to be applied while solving for the reflection and transmission coefficients from the `Assumptions` sub-panel.
+-  Select the assumptions to be applied while solving for the reflection and transmission coefficients from the `Assumptions` sub-panel.
 -  In the `Polarimetry Settings` sub-panel, enter the incident angle and ellipticity in degree. Depending on the requirement, the polarizer and analyzer angles may be entered. See `Polarimetry Settings` under `SHG Simulation` for more details.
 

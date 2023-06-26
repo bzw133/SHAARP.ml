@@ -1,4 +1,4 @@
-Maker fringes
+## Maker fringes
 
 The following tutorial demonstrates the calculation of Maker fringes for a multilayer composed of Z-cut quartz with a gold layer deposited at the back of the slab. This example has been presented in the manuscript and highlights the importance of multiple reflections. 
 
@@ -43,7 +43,8 @@ We start by discussing the experimental details before proceeding to simulate th
 
     ![makerpattern](./img/makerpattern.png)
 
-One can now try changing the thickness of the slab by 1 $\mu$m to see the effect of the slab thickness on the Maker fringes pattern. To do this, go back to the `Set Material Properties` and click on `1` to modify the quartz layer. Change the thickness and click `Update`. Now click on `SHG Polarimetry` and click `Update` again to run the Maker fringes simulation for the new thickness.
+-  Click `Copy` to copy the underlying list to the clipboard. In a *Mathematica®* notebook, paste this and give this a name. This list can now be plotted using `ListPlot[]`.
+-  One can also try changing the thickness of the slab by $\pm$1 $\mu$m to see the effect of the slab thickness on the Maker fringes pattern. To do this, go back to the `Set Material Properties` and click on `1` to modify the quartz layer. Change the thickness and click `Update`. Now click on `SHG Polarimetry` and click `Update` again to run the Maker fringes simulation for the new thickness.
 
 ## SHG Polarimetry
 
@@ -93,7 +94,8 @@ The figure below the multilayer shows the relative orientation of the $Z_1 Z_2 Z
 - In the crystal orientation sub-panel, click `Use Crystal Physics Direction` and enter the following: $Z_1 = (0,0,1)$, $Z_2=(0,1,0)$ and $Z_3=(-1,0,0)$. 
 - Now click `Update` and go to `SHG Polarimetry` and click `Update` again to generate the polar plots under the same polarimetry settings. One observes that the SHG plots have changed.
 
-### Partial Analytical Expressions
+!!! note
+	While `Partial Analytical Expression` is best used for getting the SHG intensities when unknown thicknesses and/or SHG tensor elements are given, it can also be used to extract the expressions used for plotting the polar plots (for known thicknesses and SHG coefficients).
 
 - To visualize the results in the same plot, click `Partial Analytical Expression` and click `Update`. This gives the expressions of the SHG intensities. Copy $I^{T, 2 \omega}(\varphi, \psi)$ by clicking `Copy` next to it and assign it to a _Mathematica®_ function. 
 
@@ -103,4 +105,31 @@ The figure below the multilayer shows the relative orientation of the $Z_1 Z_2 Z
 
     ![comp](./img/comp.png)
 
-    One can also verify that the absence of the quartz layer results in the same SHG intensities for both the polarizations. To do this, go back to `Set Materials Properties` and remove the second layer and generate the expressions for the polar plot in the `Partial Analytical Expressions` tab. Repeat the same for the other direction of polarization (by changing the crystal physics coordinates) and save these as Mathematica functions and use `PolarPlot[]` to plot them.
+- One can also verify that the absence of the quartz layer results in the same SHG intensities for both the polarizations. To do this, go back to `Set Materials Properties` and remove the second layer and generate the expressions for the polar plot in the `Partial Analytical Expressions` tab. Repeat the same for the other direction of polarization (by changing the crystal physics coordinates) and save these as *Mathematica*® functions and use `PolarPlot[]` to plot them.
+
+## Partial Analytical Expressions
+
+This section explains how to obtain the reflected and transmitted SHG intensities analytically so that comparisions to experiments can be made to either determine the point group or unknown SHG coefficients by fitting. For this tutorial, we choose a material "similar" to quartz whose thickness is unknown. This material differs from quartz only with respect to it's SHG tensor elements, with $d_{11}=0.3$ and unknown $d_{14}$. Fundamental light of 800 nm is assumed to be incident at 45$^{\circ}$ on this material. The experimental setting is a rotating polarizer and fixed analyzer.
+
+- Open `SHAARP.ml_Vx.xx.nb` in _Mathematica®_. Evaluate the notebook by clicking `Evaluation > Evaluate Notebook`. Ensure that Dynamic Evaluation is enabled in _Mathematica®_. If everything goes right, the user guide should be visible in the notebook. In case the user guide is not seen, please re-evaluate the notebook or restart _Mathematica®_ and try again.
+- In the functionality sub-panel of the input panel on the left, click `Set Material Properties` to define the material.
+- Set the wavelength to 0.8 $\mu$m (800 nm) from the wavelength setting sub-panel.
+- In the material selection sub-panel, type 1 for the number of layers.  
+- Click on `1` to edit the first layer of the multilayer. Give it a suitable name, say "quartz". The crystal structure and optical properties of quartz are already pre-defined and saved as an example. To apply these properties, click on quartz (001) from the `Case Study` sub-panel.
+- In the thickness sub-panel, click `analytical h` to provide a variable thickness to the slab. The box should show `h1`.
+- In the SHG tensor sub-panel, click `analytical dij`. This will replace all the text boxes with unknown coefficients `d11m1` and `d14m1`. For the point group 32, there are only two independent SHG coefficients $d_{11}$ and $d_{14}$. Since it's given that $d_{11}=0.3$, manually enter this value in place of `d11m1`. This effectively leaves only one undetermined SHG coefficient $d_{14}$. One may also leave all the SHG coefficients as symbolic variables and finally substitute them with the numerical values. However, due to more unknowns in this case, it takes a longer time to calculate the analytical expressions.
+- Click `Update` to visualize this quartz slab.
+- In `Partial Analytical Expressions`, enter the assumption to use. In this case, full multiple reflections with backward waves and standing waves will be considered. 
+- Set the incident angle to $45^{\circ}$ and set the polarimetry configuration to rotate polarizer and fix analyzer. 
+- Click `Update` to generate the SHG intensities as a function of unknowns `h1` and `d14m1`.
+- Click `Copy` to copy any of the expressions and assign it to a function with variables $\varphi$, `h1` and `d14m1`. Use `Simplify[]` to simplify the expression. The final statement will look like `funcName[\[CurlyPhi]_, h1_, d14m1_] := Simplify[ *paste here* ]`.
+
+!!! note
+	$\varphi$ (`\[CurlyPhi]`) can be quickly entered in *Mathematica®* using the alias `Esc-j-Esc`.
+
+!!! note
+	In some cases, the derived expressions are too long to be displayed. In this case, the output panel displays "Too long to show". However, the user can still click `Copy` (`Export`)  to copy (export) the full expression.  
+
+-  This function can be used as a regular *Mathematica®* function.
+-  Click `Export` to save the expression in a `.mx` file. Give it a suitable name while saving. 
+-  To load the expression, use `Import[]`. For example, `funcName[\[CurlyPhi]_, h1_, d14m1_] := Import["equationRp.mx"]`.
