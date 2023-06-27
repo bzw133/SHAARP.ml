@@ -47,7 +47,11 @@ The following sub-panels are visible when the `Set Material Properties` tab is s
 
 ![casestudy](./img/casestudy.png)
 
-Crystal and optical properties of some common materials such as air, LiNbO<sub>3</sub> (LNO), KTiOPO<sub>4</sub> (KTP), etc. are pre-defined for convenience. The user may just click the layer number and select any of the above to quickly apply the properties to the selected layer.  
+-  Crystal and optical properties of some common materials such as air, LiNbO<sub>3</sub> (LNO), KTiOPO<sub>4</sub> (KTP), etc. are pre-defined for convenience. The user may just click the layer number and select any of the above to quickly apply the properties to the selected layer. 
+-  Click on `Blank linear` or `Blank nonlinear` to define a new linear or non-linear material with user provided crystal structure, crystal orientation, linear susceptibilities (and SHG tensors for non-linear materials).
+
+!!! note
+	Check out the presets sub-panel below to save the user defined crystal and optical properties as a preset.
 
 #### Layer thickness
 

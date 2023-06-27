@@ -22,7 +22,8 @@ The output panel occupies the major part of the graphical interface. The content
 
 ![geometry](./img/geometry.png)
 
--  The figure on the top-left presents a schematic of the multiple reflection of waves in the different layers. The red rays denote the waves at the fundamental frequency and the blue rays denote the second harmonic waves. The orange waves reflect the sub-assumption used for full multiple reflections. 
+-  The figure on the top-left presents a schematic of the multiple reflection of waves in the different layers. The topmost and bottommost layers are vacuum/air. 
+-  The red rays denote the waves at the fundamental frequency and the blue rays denote the second harmonic waves. The orange waves represent the $2\omega$ inhomogeneous waves reflect the sub-assumption used for full multiple reflections. 
 
 
 -  The figure on the top-right shows the fundamental incident wavevector $k^{\omega}$ and the plane of incidence in the lab coordinate system (defined by $L_1 L_2 L_3$).
@@ -62,9 +63,11 @@ The output panel occupies the major part of the graphical interface. The content
 
 ### Partial Analytical Expressions
 
-![partial_op](./img/partial_op.png)
+![partial_op](./img/partial_op_w.png)
 
--  This panel contains the partial analytical expressions of the SHG reflectance and transmittance as a function of the polarizer angle $\varphi$ and the unknown parameters (thickness and SHG tensor) as provided in the `Set Material Properties` tab in the input panel.
+![partial_op](./img/partial_op_2w.png)
+
+-  This panel contains the partial analytical expressions of the fundamental and SHG reflectance and transmittance as a function of the polarizer angle $\varphi$ and the unknown parameters (thickness and/or SHG coefficients) as provided in the `Set Material Properties` tab in the input panel.
 -  One may copy the derived analytical expressions by clicking on the `Copy` button or save the expression to a `.mx` file by clicking `Export`.
 
 !!! note
