@@ -1,0 +1,22 @@
+## Numerical simulation of SHG responses for materials with known SHG coefficients   
+- Input parameters
+	- Materials properties 
+		- Crystallographic orientation of sample 
+		- Layer thickness of sample 
+		- Refractive indices/dielectric coefficients at the optical frequency 
+		- SHG coefficients 
+	- Incident waves 
+		- Under the plane-wave assumption 
+		- Angle of incidence 
+		- Wavelength in vacuum 
+		- 
+	- Polarizer/analyzer 
+		- 
+- Output results 
+	- Fresnel coefficients (reflected and transmitted SHG intensities of the fundamental wave as a function of incident angle)
+	- Maker fringes (transmitted SHG intensity of the SHG wave as a function of incident angle)
+	- SHG Polarimetry
+		- Polar plots of the s- and p-polarized SHG signals 
+		- choice of rotated/fixed polarizer and rotated/fixed analyzer 
+	- 
+## Obtain (semi-)analytical expression to fit experimental data   
