@@ -39,6 +39,10 @@ The output panel occupies the major part of the graphical interface. The content
 
 -  The sub-panel shows the polar plots of the reflected and transmitted intensities of the second harmonic wave as a function of the incident polarization angle $\varphi$. $\psi$ refers to the analyzer angle. 
 -  The assumption used for the calculation is also mentioned. 
+-  Buttons are provided to copy the underlying (normalized) expressions to the clipboard which may then be assigned to a *Mathematica®* function having argument `\[CurlyPhi]_`.
+
+!!! note
+	$\varphi$ (`\[CurlyPhi]`) can be quickly entered in *Mathematica®* using the alias `Esc-j-Esc`.
 
 #### Fresnel Coefficients Figure
 
@@ -59,7 +63,7 @@ The output panel occupies the major part of the graphical interface. The content
 
 -  Plots of the calculated SHG intensity $I^{2 \omega}(\theta^i, \varphi, \psi)$ and $I^{2 \omega}(\theta^i, \varphi, \psi+90^{\circ})$ as a function of the incidence angle $\theta^i$ is calculated for fixed incident polarization angle $\varphi$ and fixed analyzer angle $\psi$ as provided in the `Maker Fringes Collection Settings` in the input panel. 
 -  The assumption used for the calculation is also mentioned. 
--  Buttons are also provided to copy the data to compare with experiments. The values are copied to the clipboard  as a list and may be pasted in a *Mathematica®* notebook.
+-  Buttons are also provided to copy the data to compare with experiments. The values are copied to the clipboard as a list and may be pasted in a *Mathematica®* notebook.
 
 ### Partial Analytical Expressions
 
@@ -68,11 +72,24 @@ The output panel occupies the major part of the graphical interface. The content
 ![partial_op](./img/partial_op_2w.png)
 
 -  This panel contains the partial analytical expressions of the fundamental and SHG reflectance and transmittance as a function of the polarizer angle $\varphi$ and the unknown parameters (thickness and/or SHG coefficients) as provided in the `Set Material Properties` tab in the input panel.
--  One may copy the derived analytical expressions by clicking on the `Copy` button or save the expression to a `.mx` file by clicking `Export`.
+
+-  One may copy the derived analytical expressions by clicking on the `Copy` button and assiging it to a *Mathematica®* function with arguments `\[CurlyPhi]_` and the unknown thicknesses (having form `hk`) and/or SHG coefficients (of the form `dijmk`). 
 
 !!! note
-	In some cases, the derived expressions are too long to be displayed. In this case, the user can still click `Copy` to copy the full expression which may be pasted in a *Mathematica®* notebook.
+	$\varphi$ (`\[CurlyPhi]`) can be quickly entered in *Mathematica®* using the alias `Esc-j-Esc`.
+
+-   To save the expression to a `.mx` file, click `Export` and give it a suitable name. To load the expression into a *Mathematica®* notebook, use the following code:
+
+   ![import](./img/import_op.png)
+   
+   If the `.mx` file is saved in a different directory from the one where the current notebook is being executed, enter the path of the saved file in the `Import[]` function.
 
 !!! note
-	The derived expressions are unsimplified; use `Simplify[]` or `FullSimplify[]`to simplify these expressions after copying.
+	In some cases, the derived expressions are too long to be displayed. In this case, the user can still click `Copy` to copy the full expression.
+
+!!! note
+	While `Partial Analytical Expression` is best used for getting the SHG intensities when unknown thicknesses and/or SHG tensor elements are given, it can also be used to extract the expressions used for plotting the polar plots (for known thicknesses and SHG coefficients). The expressions may differ from the expressions obtained using the `Copy` button below the SHG polar plots by a normalization factor.
+
+!!! note
+	The derived expressions are unsimplified; use `Simplify[]` or `FullSimplify[]`to simplify these expressions after copying if needed.
 

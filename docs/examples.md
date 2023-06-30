@@ -31,7 +31,7 @@ We start by discussing the experimental details before proceeding to simulate th
 
 - Now click on `SHG Simulation` in the functionality sub-panel to define the experimental setup. Check  `Generate Maker Fringes Plot` to calculate the Maker Fringes pattern.
 
-- Select the assumption to use. By default, ♯SHAARP._ml_ uses full multiple reflections.
+- The full multiple reflection considering backward propagating waves along with standing waves is used for the simulation.
 
 - In the Maker fringes collection settings, enter the incident angle range for the Maker fringes simulation. We shall simulate the pattern for incident angles between 0$^{\circ}$ and 45$^{\circ}$. To do this, set the minimum incident angle to 0 and maximum incident angle to 45. This can be done by either dragging the sliders, clicking on the angle button or manually entering the angle.
 
@@ -48,7 +48,7 @@ We start by discussing the experimental details before proceeding to simulate th
 
 ## SHG Polarimetry
 
-In this section, we show how two SHG active layers can be used to determine the spontaneous polarization by SHG interference contrast. The experimental setup consists of a 50 $\mu$m layer of LiNbO<sub>3</sub> ($2 \bar{1} \bar{1} 0$) crystal on 10 $\mu$m (001) quartz. The fundamental light has a wavelength of 1550 nm and is incident on the multilayer normally. The polarization of the fundamental light is varied and the p-polarized SHG intensity is recorded. To set the direction of the spontaneous polarizations (along c axis), it is easier to specify the orientation using the crystal physics coordinate system $Z_1 Z_2 Z_3$. 
+In this section, we show how two SHG active layers can be used to determine the spontaneous polarization by SHG interference contrast. The experimental setup consists of a 50 $\mu$m layer of LiNbO<sub>3</sub> ($2 \bar{1} \bar{1} 0$) crystal on 35 $\mu$m (001) quartz. The fundamental light has a wavelength of 1550 nm and is incident on the multilayer normally. The polarization of the fundamental light is varied and the p-polarized SHG intensity is recorded. To set the direction of the spontaneous polarizations (along c axis), it is easier to specify the orientation using the crystal physics coordinate system $Z_1 Z_2 Z_3$. 
 
 ![pols](./img/pols.png)
 
@@ -69,7 +69,7 @@ In this section, we show how two SHG active layers can be used to determine the 
 
 - To define the orientation of the LiNbO<sub>3</sub> crystal, click on `Use Crystal Physics Direction` in the crystal orientation sub-panel. For the spontaneous polarization of LiNbO<sub>3</sub> to be oriented along the polarization vector for quartz, the crystal physics vectors in the lab coordinate system take the following values: $Z_1 = (0,0,1)$, $Z_2=(0,-1,0)$ and $Z_3=(1,0,0)$. 
 
-- Having defined the properties for LiNbO<sub>3</sub>, now click `2` in the material selection sub-panel to set the properties of the quartz layer. Give it a suitable name, say "quartz" and click `Quartz (001)` from the case study sub-panel. Now set the thickness to 10 ($\mu$m). The other properties for the quartz layer have already been provided. In general, the user would need to enter the values corresponding to the crystal and optical properties.
+- Having defined the properties for LiNbO<sub>3</sub>, now click `2` in the material selection sub-panel to set the properties of the quartz layer. Give it a suitable name, say "quartz" and click `Quartz (001)` from the case study sub-panel. Now set the thickness to 35 ($\mu$m). The other properties for the quartz layer have already been provided. In general, the user would need to enter the values corresponding to the crystal and optical properties.
 
 - Now click on `Update` to visualize the multilayer that has been defined. It should look like the figure below. 
 
@@ -78,7 +78,7 @@ The figure below the multilayer shows the relative orientation of the $Z_1 Z_2 Z
 
 - Click on `SHG Polarimetry` in the functionality sub-panel to generate the polar plots. If required, check `Generate Fresnel Coefficients Plot` and/or `Generate Maker Fringes Plot` to calculate the Fresnel coefficients and/or Maker fringes pattern.
 
-- The full multiple reflection considering backward propagating waves without any standing waves is used for the simulation.
+- The full multiple reflection considering backward propagating waves along with standing waves is used for the simulation.
 
 - From the polarimetry settings sub-panel, set the incident angle to 0 (normal incidence). Since the incident light is linearly polarized, the ellipticity is 0.
 
@@ -93,19 +93,13 @@ The figure below the multilayer shows the relative orientation of the $Z_1 Z_2 Z
 - Now, to generate the polar plots for the case where LiNbO<sub>3</sub> polarization is opposite to that of quartz, go back to `Set Material Properties` and select the LiNbO<sub>3</sub> layer by clicking `1` in the materials selection sub-panel. 
 - In the crystal orientation sub-panel, click `Use Crystal Physics Direction` and enter the following: $Z_1 = (0,0,1)$, $Z_2=(0,1,0)$ and $Z_3=(-1,0,0)$. 
 - Now click `Update` and go to `SHG Polarimetry` and click `Update` again to generate the polar plots under the same polarimetry settings. One observes that the SHG plots have changed.
-
-!!! note
-	While `Partial Analytical Expression` is best used for getting the SHG intensities when unknown thicknesses and/or SHG tensor elements are given, it can also be used to extract the expressions used for plotting the polar plots (for known thicknesses and SHG coefficients).
-
-- To visualize the results in the same plot, click `Partial Analytical Expression` and click `Update`. This gives the expressions of the SHG intensities. Copy $I^{T, 2 \omega}(\varphi, \psi)$ by clicking `Copy` next to it and assign it to a _Mathematica®_ function. 
-
-- Repeat the same by changing the crystal physics directions for the case of same direction polarization. Copy the transmitted SHG intensity and save it as a _Mathematica®_ function. 
+- To visualize the results in the same plot, click the  `Copy` button and assign it to a _Mathematica®_ function. Repeat the same by changing the crystal physics directions for the case of same direction polarization. Copy the transmitted SHG intensity and save it as a _Mathematica®_ function. 
 
 - Now use `PolarPlot[]` to plot both of these on the same plot. 
 
     ![comp](./img/comp.png)
 
-- One can also verify that the absence of the quartz layer results in the same SHG intensities for both the polarizations. To do this, go back to `Set Materials Properties` and remove the second layer and generate the expressions for the polar plot in the `Partial Analytical Expressions` tab. Repeat the same for the other direction of polarization (by changing the crystal physics coordinates) and save these as *Mathematica*® functions and use `PolarPlot[]` to plot them.
+- One can also verify that the absence of the quartz layer results in the same SHG intensities for both the polarizations. To do this, go back to `Set Materials Properties` and remove the second layer and copy the expressions for the polar plot. Repeat the same for the other direction of polarization (by changing the crystal physics coordinates) and save these as *Mathematica*® functions and use `PolarPlot[]` to plot them.
 
 ## Partial Analytical Expressions
 
@@ -131,5 +125,13 @@ This section explains how to obtain the reflected and transmitted SHG intensitie
 	In some cases, the derived expressions are too long to be displayed. In this case, the output panel displays "Too long to show". However, the user can still click `Copy` (`Export`)  to copy (export) the full expression.  
 
 -  This function can be used as a regular *Mathematica®* function.
+
 -  Click `Export` to save the expression in a `.mx` file. Give it a suitable name while saving. 
--  To load the expression, use `Import[]`. For example, `funcName[\[CurlyPhi]_, h1_, d14m1_] := Import["equationRp.mx"]`.
+
+-  To load the expression, use `Import[]`. Use the following code if the `.mx` file is saved in the same directory as that of the notebook:
+![import](./img/import.png)
+   
+   If the `.mx` file is saved in a different directory from the one where the current notebook is being executed, enter the path of the saved file in the `Import[]` function.
+   
+   
+
