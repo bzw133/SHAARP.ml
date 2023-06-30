@@ -3,7 +3,7 @@
 ![GitHub Size](https://img.shields.io/github/repo-size/Rui-Zu/SHAARP)
 
 # Welcome to ♯SHAARP._ml_ 
----
+
 **♯SHAARP**._ml_ is an open-source package for modeling reflected and transmitted optical second harmonic generation (SHG) of a single-layer slab and multi-layer heterostructure of nonlinear optical materials. 
 
 This package builds in the most general approach to both analytically and numerically solving the SHG response of various materials systems. The package is designed to handle **arbitrary number of layers, number of SHG active mediums, crystal symmetry, arbitrary orientation, complex refractive indices, and arbitrary polarization state of light** (e.g., linearly, circularly, elliptically polarized). The two most common SHG characterization approaches, Maker fringes and polarimetry, are integrated into the package. 
@@ -11,7 +11,6 @@ This package builds in the most general approach to both analytically and numeri
 **♯SHAARP**._ml_ is also a successor of the **♯SHAARP**._si_, which was designed for modeling the reflected SHG responses for an single interface.  
 
 # Features and Applications 
----
 
 **♯SHAARP**._ml_ contains unique features to allow for modeling the SHG response of nonlinear optical materials in the most general scenarios. We've made extensive efforts to design the GUI in a way to balance between the generality, efficiency, and user-friendliness.   
 
@@ -53,7 +52,7 @@ With given materials properties, **♯SHAARP**._ml_ allows for numerical simulat
 To obtain an analytical expression of the SHG response for a slab or multilayer consisting of nonlinear optical materials with unknown SHG coefficients and thickness. This expression can then be used to fit the SHG intensity measured from experiments,  from which one can extract structural information (e.g., thickness of the SHG active layer), determine the symmetry/polarity of the sample, and quantify the nonlinear optical susceptibilities (i.e., the SHG coefficients).
 
 # Quickstart 
----
+
 ## Installation 
 
 ♯SHAARP._ml_ is written as a notebook using Wolfram Language and the access to _Mathematica®_ or *Wolfram Player* is required to run **♯SHAARP**._ml_ on PC/Mac. 
@@ -84,7 +83,7 @@ To obtain an analytical expression of the SHG response for a slab or multilayer 
 
 Please refer to the documentation to learn more advanced topics and tips about **♯SHAARP**._ml_. 
 
----
+
 
 ## Links 
 - Code repository of **♯SHAARP**._ml_: https://github.com/bzw133/SHAARP.ml
