@@ -1,27 +1,36 @@
-# Welcome to ♯SHAARP._ml_ 
+
 ![GitHub release version](https://img.shields.io/github/v/release/Rui-Zu/SHAARP?color=%2350C878&include_prereleases)
 ![License](https://img.shields.io/github/license/Rui-Zu/SHAARP)
 ![GitHub Size](https://img.shields.io/github/repo-size/Rui-Zu/SHAARP)
 
-**♯SHAARP**._ml_ is an open-source package for deriving and simulating both reflected and transmitted optical second harmonic generation (SHG) from a multi-layers heterostructure (_ml_), such as single crystals and thin films. Optical SHG describes the process where two photons of frequency $\omega$ interact with a nonlinear medium to create a photon at 2$\omega$, so called the SHG process.
+# Welcome to ♯SHAARP._ml_ 
+
+**♯SHAARP**._ml_ is an open-source package for modeling reflected and transmitted optical second harmonic generation (SHG) of a single-layer slab and multi-layer heterostructure of nonlinear optical materials. 
+
+This package builds in the most general approach to both analytically and numerically solving the SHG response of various materials systems. The package is designed to handle **arbitrary number of layers, number of SHG active mediums, crystal symmetry, arbitrary orientation, complex refractive indices, and arbitrary polarization state of light** (e.g., linearly, circularly, elliptically polarized). The two most common SHG characterization approaches, Maker fringes and polarimetry, are integrated into the package. 
+
+**♯SHAARP**._ml_ is also a successor of the **♯SHAARP**._si_, which was designed for modeling the reflected SHG responses for an single interface.  
 
 !!! note
 		The single interface package (**♯SHAARP**._si_) can be accessed using links: [GitHub](https://github.com/Rui-Zu/SHAARP), [Manual](https://shaarp.readthedocs.io/en/latest/) and [Tutorial Videos](https://www.youtube.com/watch?v=fr0RirVHXVc)
 
-This package builds in the most general approach to both analytically and numerically solving the SHG response of various materials systems. The package is designed to handle arbitrary number of layers, number of SHG active mediums, crystal symmetry, arbitrary orientation, a complex dielectric function (complex refractive indices) and any polarization state of light.  Maker fringes and polarimetry, two most common SHG characterization approaches, are integrated into the package. 
 
-As a very brief primer, the SHG interaction is given by $P_i^{2\omega} = d_{ijk}E_j^{\omega}E_k^{\omega}$, where $E$ are the fundamental electric fields of photons at $\omega$ frequency, $P^{2\omega}$ is the nonlinear polarization at $2\omega$ frequency created inside the crystal, and $d_{ijk}$ is a third rank polar tensor describing the nonlinear optical property of the crystal. The subscripts _i, j, k_ are dummy subscripts denoting the polarization directions of the respective quantities; each of these indices can be 1, 2, or 3, that represent the orthogonal _crystal physics_ axes denoted in ♯SHAARP as $(Z_1,Z_2,Z_3)$. The SHG tensor, $d_{ijk}$, thus has 3x3x3=27 terms; however, crystal symmetry can significantly reduce the number of non-zero terms in the tensor. As described in the manual in detail, besides the _crystal physics_ axes, there are four other sets of axes we will use in this package, namely, the crystallographic axes $(a,b,c)$, the lab axes, $(L_1,L_2,L_3)$, principal axes, $(Z_1^{principal},Z_2^{principal},Z_3^{principal})$ and the polarization axes (_s_, _p_); relationships between them are important to understand in order to usefully employ this package in experiments.
 
-One critical application of the code is to provide analytical expressions to provide insight of intrinsic properties through the experimental observation. By such fitting, one can obtain structural information, polarization direction, as well as nonlinear optical susceptibilities. A second application is to simulate SHG response under various polarization states of incident photons, orientations and geometric considerations.
 
-!!! note
-	This project is under active development.
+# A primer of the theoretical background  
 
-## Referencing
-We request that you cite the following technical reference in any work for which you used ♯SHAARP:
-1. R. Zu, B. Wang, J. He, J.-J. Wang, L. Weber, L.-Q. Chen, and V. Gopalan, SHAARP: An Open-Source Package for Analytical and Numerical Modeling of Optical Second Harmonic Generation in Anisotropic Crystals, (2022).
+As a very brief primer, Optical SHG describes the process where two photons of frequency $\omega$ interact with a nonlinear medium to create a photon at 2$\omega$, so called the SHG process. 
 
-## Project outline
+The SHG is induced by a quadratic dielectric response, given by $P_i^{2\omega} = d_{ijk}E_j^{\omega}E_k^{\omega}$, where $E$ is the fundamental electrical field of the fundamental wave at $\omega$ frequency, $P^{2\omega}$ is the nonlinear polarization at $2\omega$ frequency created inside the crystal, and $d_{ijk}$ is a third rank polar tensor describing the nonlinear optical property of the crystal. The subscripts _i, j, k_ are dummy subscripts running from 1 to 3. The SHG tensor, $d_{ijk}$, has 3x6=18 independent non-zero components in general considering the interchangeable indices of the electric field term $E_j^{\omega}$ and $E_k^{\omega}$ . The crystal symmetry can further reduce the number.
+
+There are four sets of coordinate systems used in **♯SHAARP**._ml_. Namely, the crystallographic, the crystal physics, the principal, and the lab coordinate systems. The crystallographic coordinate refers to the the crystallographic axes $(a,b,c)$ for a unit cell which does not necessarily to be orthogonal to each other depending on the crystal system. The crystal physics coordinate system is orthogonal with three axes denoted as $(Z_1,Z_2,Z_3)$ in **♯SHAARP**._ml_. The principal coordinate system contain three axes $(Z_1^{principal},Z_2^{principal},Z_3^{principal})$ and is extensively used to describe the optical properties of crystals such as optical axis and refractive indices. They are similar but not identical to the crystal physics coordinate system. The lab coordinate system with the axes $(L_1,L_2,L_3)$ determine the set up the model. We adopt the convention that the plane of incidence coincides with the $L_1-L_2$ plane, and the incident light is propagating toward the positive direction of $L_3$.  
+
+Beside the three 3D coordinate systems, another 2D coordinate system is useful to describe the polarization state of a wave, namely, the polarizer/analyzer coordinate system (?). The two axes (_s_, _p_) are orthogonal, with s axis is perpendicular to the plane of incidence and p axis is within the plane of incidence. The plane expanded by *s* and *p* axes is perpendicular to the wavevector of the wave entering the polarizer/analyzer.  
+
+A clear understanding of the relationships between these concepts is highly recommended to successfully employ **♯SHAARP**._ml_ to obtain reasonable results and draw reliable comparison with experiments. We have tried to make it clear for new users by incorporating several interactive 2D and 3D illustrations in the GUI. 
+
+
+# Project outline
 
 ### [Install](install.md)
 ### [Getting Started with ♯SHAARP._ml_](getstarted.md)
@@ -30,7 +39,3 @@ We request that you cite the following technical reference in any work for which
 ### [Outputs](output.md)
 ### [Examples](examples.md)
 ### [Frequently Asked Questions](FAQ.md)
-
-
-## Acknowledgement
-This development of the software was supported as part of the Computational Materials Sciences Program funded by the U.S. Department of Energy, Office of Science, Basic Energy Sciences, under Award No. DE-SC0020145.
