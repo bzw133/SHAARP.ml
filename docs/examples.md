@@ -91,15 +91,25 @@ The figure below the multilayer shows the relative orientation of the $Z_1 Z_2 Z
 ![polarplots](./img/polarplots.png)
 
 - Now, to generate the polar plots for the case where LiNbO<sub>3</sub> polarization is opposite to that of quartz, go back to `Set Material Properties` and select the LiNbO<sub>3</sub> layer by clicking `1` in the materials selection sub-panel. 
+
 - In the crystal orientation sub-panel, click `Use Crystal Physics Direction` and enter the following: $Z_1 = (0,0,1)$, $Z_2=(0,1,0)$ and $Z_3=(-1,0,0)$. 
+
 - Now click `Update` and go to `SHG Polarimetry` and click `Update` again to generate the polar plots under the same polarimetry settings. One observes that the SHG plots have changed.
-- To visualize the results in the same plot, click the  `Copy` button and assign it to a _Mathematica®_ function. Repeat the same by changing the crystal physics directions for the case of same direction polarization. Copy the transmitted SHG intensity and save it as a _Mathematica®_ function. 
 
-- Now use `PolarPlot[]` to plot both of these on the same plot. 
+- To compare the intensities of both the configurations in the same plot, click `Partial Analytical Expression` and enter the same polarimetry settings used for SHG simulation. Click `Update` to obtain the expressions of the SHG intensities. For intensities polarized along $L_1$, copy $I^{T, 2 \omega}(\varphi, \psi)$ by clicking `Copy` next to it and assign it to a _Mathematica®_ function. Repeat the same for the other orientation and assign it to another _Mathematica®_ function. 
 
-    ![comp](./img/comp.png)
+    !!! note
+    	The expressions provided by clicking `Copy` below the SHG polar plots return normalized expressions, and is thus not suitable for intensity comparisons; hence we use the expressions provided by `Partial Analytical Expression` tab.
 
-- One can also verify that the absence of the quartz layer results in the same SHG intensities for both the polarizations. To do this, go back to `Set Materials Properties` and remove the second layer and copy the expressions for the polar plot. Repeat the same for the other direction of polarization (by changing the crystal physics coordinates) and save these as *Mathematica*® functions and use `PolarPlot[]` to plot them.
+- Now use `PolarPlot[]` to plot both of these on the same plot: 
+
+    ![compp](./img/compp.png)
+
+- Similarly, to compare the intensities of SHG polarized along $L_2$, copy  $I^{T, 2 \omega}(\varphi, \psi + \pi/2)$ and follow the same instructions outlined above. The plot would look like the one shown below (note the scaling factor):
+
+    ![comps](./img/comps.png)
+
+- One can also verify that the absence of the quartz layer results in the same SHG intensities for both the polarizations. To do this, go back to `Set Materials Properties` and remove the second layer and copy the expressions for the transmitted SHG intensities. Repeat the same for the other direction of polarization (by changing the crystal physics coordinates) and save these as *Mathematica*® functions and use `PolarPlot[]` to plot them.
 
 ## Partial Analytical Expressions
 
@@ -130,8 +140,8 @@ This section explains how to obtain the reflected and transmitted SHG intensitie
 
 -  To load the expression, use `Import[]`. Use the following code if the `.mx` file is saved in the same directory as that of the notebook:
 ![import](./img/import.png)
-   
+  
    If the `.mx` file is saved in a different directory from the one where the current notebook is being executed, enter the path of the saved file in the `Import[]` function.
-   
+  
    
 
