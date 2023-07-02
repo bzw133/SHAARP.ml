@@ -45,6 +45,10 @@ We start by discussing the experimental details before proceeding to simulate th
     ![makerpattern](./img/makerpattern.png)
 
 -  Click `Copy` to copy the underlying list to the clipboard. In a *Mathematica®* notebook, paste this and give this a name. This list can now be plotted using `ListPlot[]`.
+
+    !!! note
+    	It is recommended to allow #SHAARP.ml finish running before running any other _Mathematica®_ notebook. 
+
 -  One can also try changing the thickness of the slab by $\pm$1 $\mu$m to see the effect of the slab thickness on the Maker fringes pattern. To do this, go back to the `Set Material Properties` and click on `1` to modify the quartz layer. Change the thickness and click `Update`. Now click on `SHG Polarimetry` and click `Update` again to run the Maker fringes simulation for the new thickness.
 
 ## SHG Polarimetry
@@ -102,6 +106,9 @@ The figure below the multilayer shows the relative orientation of the $Z_1 Z_2 Z
     !!! note
     	The expressions provided by clicking `Copy` below the SHG polar plots return normalized expressions, and is thus not suitable for intensity comparisons; hence we use the expressions provided by `Partial Analytical Expression` tab.
 
+    !!! note
+    	It is recommended to allow #SHAARP.ml finish running before running any other _Mathematica®_ notebook. 
+
 - Now use `PolarPlot[]` to plot both of these on the same plot: 
 
     ![compp](./img/compp.png)
@@ -127,15 +134,16 @@ This section explains how to obtain the reflected and transmitted SHG intensitie
 - In `Partial Analytical Expressions`, enter the assumption to use. In this case, full multiple reflections with backward waves and standing waves will be considered. 
 - Set the incident angle to $45^{\circ}$ and set the polarimetry configuration to rotate polarizer and fix analyzer. 
 - Click `Update` to generate the SHG intensities as a function of unknowns `h1` and `d14m1`.
-- Click `Copy` to copy any of the expressions and assign it to a function with variables $\varphi$, `h1` and `d14m1`. Use `Simplify[]` to simplify the expression. The final statement will look like `funcName[\[CurlyPhi]_, h1_, d14m1_] := Simplify[ *paste here* ]`.
+- Click `Copy` to copy any of the expressions and assign it to a function with variables $\varphi$, `h1` and `d14m1`. Use `Simplify[]` to simplify the expression if required. The final statement will look like `funcName[\[CurlyPhi]_, h1_, d14m1_] := Simplify[ *paste here* ]`. This function can be used as a regular *Mathematica®* function.
 
 !!! note
 	$\varphi$ (`\[CurlyPhi]`) can be quickly entered in *Mathematica®* using the alias `Esc-j-Esc`.
 
 !!! note
-	In some cases, the derived expressions are too long to be displayed. In this case, the output panel displays "Too long to show". However, the user can still click `Copy` (`Export`)  to copy (export) the full expression.  
+	In some cases, the derived expressions are too long to be displayed. In this case, the output panel displays "Too long to show". However, the user can still click `Copy` (`Export`)  to copy (export) the full expression.
 
--  This function can be used as a regular *Mathematica®* function.
+!!! note
+	It is recommended to allow #SHAARP.ml finish running before running any other _Mathematica®_ notebook.   
 
 -  Click `Export` to save the expression in a `.mx` file. Give it a suitable name while saving. 
 

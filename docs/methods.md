@@ -166,7 +166,7 @@ The boundary conditions for multilayer are similar to the single interface but w
 
 $$
 \begin{align}
-k^{R,2\omega}_{L_{1}}=(E^{eF,2\omega}_{L_{1}})_{Mi}=(k^{oF,2\omega}_{L_{1}})_{Mi}=(k^{eB,2\omega}_{L_{1}})_{Mi}=(k^{oB,2\omega}_{L_{1}})_{Mi}=k^{T,2\omega}_{L_{1}}\hspace{3em}(11)
+k^{R,2\omega}_{L_{1}}=(E^{eF,2\omega}_{L_{1}})_{Mi}=(k^{oF,2\omega}_{L_{1}})_{Mi}=(k^{eB,2\omega}_{L_{1}})_{Mi}=(k^{oB,2\omega}_{L_{1}})_{Mi}=k^{T,2\omega}_{L_{1}}, 1 \leq i \leq N \hspace{3em}(11)
 \end{align}
 $$
 
@@ -188,7 +188,7 @@ $$
 \\+&E^{oFoF,2\omega}_{\parallel}e^{i(2\phi^{oF,\omega})}+E^{eFoF,\omega}_{\parallel}e^{i(\phi^{eF,\omega}+\phi^{oF,\omega})}+E^{eBeB,\omega}_{\parallel}e^{-i(2\phi^{eB,\omega})}+E^{oBoB,2\omega}_{\parallel}e^{-i(2\phi^{oB,\omega})}
 \\+&E^{eBoB,2\omega}_{\parallel}e^{-i(\phi^{eB,\omega}+\phi^{oB,\omega})}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}e^{i(\phi^{eF,\omega}-\phi^{oB,\omega})}+E^{oFeB,2\omega}_{\parallel}e^{i(\phi^{oF,\omega}-\phi^{eB,\omega})}
 \\+&E^{oFoB,2\omega}_{\parallel})_{Mi}=(E^{eF,2\omega}_{\parallel}+E^{oF,2\omega}_{\parallel}+E^{eB,2\omega}_{\parallel}+E^{oB,2\omega}_{\parallel}+E^{eFeF,2\omega}_{\parallel}+E^{oFoF,2\omega}_{\parallel}+E^{eFoF,2\omega}_{\parallel}
-\\+&E^{eBeB,2\omega}_{\parallel}+E^{oBoB,2\omega}_{\parallel}+E^{eBoB,2\omega}_{\parallel}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}+E^{oFeB,2\omega}_{\parallel}+E^{oFoB,2\omega}_{\parallel})_{Mi+1},i>=2\hspace{0.5em}(13)
+\\+&E^{eBeB,2\omega}_{\parallel}+E^{oBoB,2\omega}_{\parallel}+E^{eBoB,2\omega}_{\parallel}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}+E^{oFeB,2\omega}_{\parallel}+E^{oFoB,2\omega}_{\parallel})_{Mi+1},1 \leq i \leq N-1 \hspace{0.5em}(13)
 \end{align}
 $$
 
@@ -196,7 +196,7 @@ $$
 \small
 \begin{align}
 (&E^{eF,2\omega}_{\parallel}+E^{oF,2\omega}_{\parallel}+E^{eB,2\omega}_{\parallel}+E^{oB,2\omega}_{\parallel}+E^{eFeF,2\omega}_{\parallel}+E^{oFoF,2\omega}_{\parallel}+E^{eFoF,2\omega}_{\parallel}+E^{eBeB,2\omega}_{\parallel}
-\\+&E^{oBoB,2\omega}_{\parallel}+E^{eBoB,2\omega}_{\parallel}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}+E^{oFeB,2\omega}_{\parallel}+E^{oFoB,2\omega}_{\parallel})_{Mi}=E^{T,2\omega}_{\parallel}\hspace{5em}(14)
+\\+&E^{oBoB,2\omega}_{\parallel}+E^{eBoB,2\omega}_{\parallel}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}+E^{oFeB,2\omega}_{\parallel}+E^{oFoB,2\omega}_{\parallel})_{MN}=E^{T,2\omega}_{\parallel}\hspace{5em}(14)
 \end{align}
 $$
 
@@ -204,7 +204,7 @@ $$
 \small
 \begin{align}
 &H^{R,2\omega}_{\parallel}=(H^{eF,2\omega}_{\parallel}+H^{oF,2\omega}_{\parallel}+H^{eB,2\omega}_{\parallel}+H^{oB,2\omega}_{\parallel}+H^{eFeF,2\omega}_{\parallel}+H^{oFoF,2\omega}_{\parallel}+H^{eFoF,2\omega}_{\parallel}
-\\+&H^{eBeB,2\omega}_{\parallel}+H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{M2}\hspace{3em}(15)
+\\+&H^{eBeB,2\omega}_{\parallel}+H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{M1}\hspace{3em}(15)
 \end{align}
 $$
 
@@ -216,7 +216,7 @@ $$
 \\+&H^{oFoF,2\omega}_{\parallel}e^{i(2\phi^{oF,\omega})}+H^{eFoF,\omega}_{\parallel}e^{i(\phi^{eF,\omega}+\phi^{oF,\omega})}+H^{eBeB,\omega}_{\parallel}e^{-i(2\phi^{eB,\omega})}+H^{oBoB,2\omega}_{\parallel}e^{-i(2\phi^{oB,\omega})}
 \\+&H^{eBoB,2\omega}_{\parallel}e^{-i(\phi^{eB,\omega}+\phi^{oB,\omega})}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}e^{i(\phi^{eF,\omega}-\phi^{oB,\omega})}+H^{oFeB,2\omega}_{\parallel}e^{i(\phi^{oF,\omega}-\phi^{eB,\omega})}
 \\+&H^{oFoB,2\omega}_{\parallel})_{Mi}=(H^{eF,2\omega}_{\parallel}+H^{oF,2\omega}_{\parallel}+H^{eB,2\omega}_{\parallel}+H^{oB,2\omega}_{\parallel}+H^{eFeF,2\omega}_{\parallel}+H^{oFoF,2\omega}_{\parallel}+H^{eFoF,2\omega}_{\parallel}
-\\+&H^{eBeB,2\omega}_{\parallel}+H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{Mi+1},i>=2\hspace{0.5em}(16)
+\\+&H^{eBeB,2\omega}_{\parallel}+H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{Mi+1},1 \leq i \leq N-1 \hspace{0.5em}(16)
 \end{align}
 $$
 
@@ -225,7 +225,7 @@ $$
 \small
 \begin{align}
 (&H^{eF,2\omega}_{\parallel}+H^{oF,2\omega}_{\parallel}+H^{eB,2\omega}_{\parallel}+H^{oB,2\omega}_{\parallel}+H^{eFeF,2\omega}_{\parallel}+H^{oFoF,2\omega}_{\parallel}+H^{eFoF,2\omega}_{\parallel}+H^{eBeB,2\omega}_{\parallel}
-\\+&H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{Mi}=H^{T,2\omega}_{\parallel}\hspace{5em}(17)
+\\+&H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{MN}=H^{T,2\omega}_{\parallel}\hspace{5em}(17)
 \end{align}
 $$
 

@@ -5,6 +5,9 @@ The output panel occupies the major part of the graphical interface. The content
 !!! note
 	Please click on `Update` on the top right corner after specifying the inputs for the changes to take place. 
 
+!!! note
+	It is recommended to allow #SHAARP.ml finish running before running any other _Mathematica®_ notebook. 
+
 ### Set Material Properties
 
 ![multilayer](./img/multilayer.png)
