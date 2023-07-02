@@ -16,19 +16,21 @@
 !!! note
 	It is recommended to keep all the files in the same directory to access all the features provided by **SHAARP._ml_**.
 
-1. Unzip the file. Open the main notebook file `SHAARP_ml_V#.##.nb​` using **_Mathematica®_** or **Wolfram Player**.
+1. Unzip the file. Open the main notebook file `SHAARP_ml_Vx.xx.nb​` using **_Mathematica®_** or **Wolfram Player**.
 
-2. Making sure that Dynamic Evaluation is enabled, evaluate the notebook by clicking `Evaluation > Evaluate Notebook` from the menu bar. This process clears the definitions from the other currently open notebooks.
+2. Making sure that Dynamic Evaluation is enabled, evaluate the notebook by clicking `Evaluation > Evaluate` from the menu bar. This process clears the definitions from the other currently open notebooks.
 
 3. The main panel should now be visible after sometime. Please give at least 10 seconds for the initialization process. If you face issues, please re-evaluate the notebook or restart Mathematica. 
-	- See [Warning message of SHAARP](<FAQ.md#Warning message of SHAARP>) in [FAQ](FAQ.md)
-
+	
+- See [Warning message of SHAARP](<FAQ.md#Warning message of SHAARP>) in [FAQ](FAQ.md)
+	
 4. 
-   ![mainpanel](./img/readme-welcome.png)
+   ![mainpanel](./img/mainpanel.png)
 
    The main panel contains the following sub-panels:
 
    -  **[Input panel](input.md)** for providing the material properties, polarimetry settings, simplifying assumptions, etc
    -  **[Output panel](output.md)** to display the optics geometry, generated polar plots, Maker fringes, partial analytical expressions, etc.
-   -  **Update button** to run the calculations after specifying the various input parameters
+   -  **Update button** to run the calculations after specifying the various input parameters. Note that there are two more update buttons (one each in the input and output panels) and all of them are equivalent. 
    -  **Progress bar** to indicate the progress of the calculation after clicking Update
+

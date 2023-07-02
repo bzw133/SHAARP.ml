@@ -7,7 +7,6 @@ We start by discussing the experimental details before proceeding to simulate th
 - Open `SHAARP.ml_Vx.xx.nb` in _Mathematica®_. Evaluate the notebook by clicking `Evaluation > Evaluate Notebook`. Ensure that Dynamic Evaluation is enabled in _Mathematica®_. If everything goes right, the user guide should be visible in the notebook as shown below.
 
    ![good](./img/good.png)
-   
    In case the above is not seen, please re-evaluate the notebook or restart _Mathematica®_ and try again.
 
 -  In the functionality sub-panel of the input panel on the left, click `Set Material Properties` to define the multilayer.
@@ -42,7 +41,7 @@ We start by discussing the experimental details before proceeding to simulate th
 
 - Now click on `Update` to start the simulation. This shall take a few minutes due to the small step size. The simulated Maker fringes pattern should look as shown below.
 
-    ![makerpattern](./img/makerpattern.png)
+	![makerpattern](./img/makerpattern.png)
 
 -  Click `Copy` to copy the underlying list to the clipboard. In a *Mathematica®* notebook, paste this and give this a name. This list can now be plotted using `ListPlot[]`.
 
@@ -78,7 +77,7 @@ In this section, we show how two SHG active layers can be used to determine the 
 
 - Now click on `Update` to visualize the multilayer that has been defined. It should look like the figure below. 
 
-    ![LNOq](./img/LNOq.png)
+	![LNOq](./img/LNOq.png)
 The figure below the multilayer shows the relative orientation of the $Z_1 Z_2 Z_3$ axes of the selected layer with respect to the lab coordinate system $L_1 L_2 L_3$. From the functionality sub-panel, click on `3D Schematics` to see this as an interactive 3D figure.
 
 - Click on `SHG Polarimetry` in the functionality sub-panel to generate the polar plots. If required, check `Generate Fresnel Coefficients Plot` and/or `Generate Maker Fringes Plot` to calculate the Fresnel coefficients and/or Maker fringes pattern.
@@ -91,9 +90,7 @@ The figure below the multilayer shows the relative orientation of the $Z_1 Z_2 Z
 
 - Click `Update` to run the SHG simulation and generate the polar plots. The resultant plots should look as shown.
 
-
-
-![polarplots](./img/polarplots.png)
+	![polarplots](./img/polarplots.png)
 
 - Now, to generate the polar plots for the case where LiNbO<sub>3</sub> polarization is opposite to that of quartz, go back to `Set Material Properties` and select the LiNbO<sub>3</sub> layer by clicking `1` in the materials selection sub-panel. 
 

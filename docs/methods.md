@@ -134,13 +134,13 @@ Boundary conditions are important to accurately determine the propagation direct
 
 $$
 \begin{align}
-k^{i,\omega}_{L_1}=k^{R,\omega}_{L_1}=k^{T,e,\omega}_{L_1}=k^{T,o,\omega}_{L_1}\hspace{3em}(7)
+k^{i,\omega}_{L_1}=k^{R,\omega}_{L_1}=k^{T,e,\omega}_{L_1}=k^{T,o,\omega}_{L_1}\hspace{3em}(8)
 \end{align}
 $$
 
 $$
 \begin{align}
-k^{R,2\omega}_{L_1}=k^{S,2\omega}_{L_1}=k^{T,e,2\omega}_{L_1}=k^{T,o,2\omega}_{L_1}\hspace{3em}(8)
+k^{R,2\omega}_{L_1}=k^{S,2\omega}_{L_1}=k^{T,e,2\omega}_{L_1}=k^{T,o,2\omega}_{L_1}\hspace{3em}(9)
 \end{align}
 $$
 
@@ -148,13 +148,13 @@ from which the wavevectors and propagation angles of all refractive and reflecti
 
 $$
 \begin{align}
-E^{R,2\omega}_{\parallel}=E^{T,e,2\omega}_{\parallel}+E^{T,o,2\omega}_{\parallel}+E^{T,ee,2\omega}_{\parallel}+E^{T,oo,2\omega}_{\parallel}+E^{T,eo,2\omega}_{\parallel}=E^{T,2\omega}_{\parallel}\hspace{3em}(9)
+E^{R,2\omega}_{\parallel}=E^{T,e,2\omega}_{\parallel}+E^{T,o,2\omega}_{\parallel}+E^{T,ee,2\omega}_{\parallel}+E^{T,oo,2\omega}_{\parallel}+E^{T,eo,2\omega}_{\parallel}=E^{T,2\omega}_{\parallel}\hspace{3em}(10)
 \end{align}
 $$
 
 $$
 \begin{align}
-H^{R,2\omega}_{\parallel}=H^{T,e,2\omega}_{\parallel}+H^{T,o,2\omega}_{\parallel}+H^{T,ee,2\omega}_{\parallel}+H^{T,oo,2\omega}_{\parallel}+H^{T,eo,2\omega}_{\parallel}=H^{T,2\omega}_{\parallel}\hspace{3em}(10)
+H^{R,2\omega}_{\parallel}=H^{T,e,2\omega}_{\parallel}+H^{T,o,2\omega}_{\parallel}+H^{T,ee,2\omega}_{\parallel}+H^{T,oo,2\omega}_{\parallel}+H^{T,eo,2\omega}_{\parallel}=H^{T,2\omega}_{\parallel}\hspace{3em}(11)
 \end{align}
 $$
 
@@ -166,7 +166,7 @@ The boundary conditions for multilayer are similar to the single interface but w
 
 $$
 \begin{align}
-k^{R,2\omega}_{L_{1}}=(E^{eF,2\omega}_{L_{1}})_{Mi}=(k^{oF,2\omega}_{L_{1}})_{Mi}=(k^{eB,2\omega}_{L_{1}})_{Mi}=(k^{oB,2\omega}_{L_{1}})_{Mi}=k^{T,2\omega}_{L_{1}}, 1 \leq i \leq N \hspace{3em}(11)
+k^{R,2\omega}_{L_{1}}=(E^{eF,2\omega}_{L_{1}})_{Mi}=(k^{oF,2\omega}_{L_{1}})_{Mi}=(k^{eB,2\omega}_{L_{1}})_{Mi}=(k^{oB,2\omega}_{L_{1}})_{Mi}=k^{T,2\omega}_{L_{1}}, 1 \leq i \leq N \hspace{3em}(12)
 \end{align}
 $$
 
@@ -176,7 +176,7 @@ $$
 E^{R,2\omega}_{\parallel}=
 (&E^{eF,2\omega}_{\parallel}+E^{oF,2\omega}_{\parallel} 
 +E^{eB,2\omega}_{\parallel}+E^{oB,2\omega}_{\parallel}+E^{eFeF,2\omega}_{\parallel}+E^{oFoF,2\omega}_{\parallel}+E^{eFoF,2\omega}_{\parallel}+E^{eBeB,2\omega}_{\parallel}
-\\+&E^{oBoB,2\omega}_{\parallel}+E^{eBoB,2\omega}_{\parallel}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}+E^{oFeB,2\omega}_{\parallel}+E^{oFoB,2\omega}_{\parallel})_{M1}\hspace{5em}(12)
+\\+&E^{oBoB,2\omega}_{\parallel}+E^{eBoB,2\omega}_{\parallel}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}+E^{oFeB,2\omega}_{\parallel}+E^{oFoB,2\omega}_{\parallel})_{M1}\hspace{5em}(13)
 \end{align}
 $$
 
@@ -188,7 +188,7 @@ $$
 \\+&E^{oFoF,2\omega}_{\parallel}e^{i(2\phi^{oF,\omega})}+E^{eFoF,\omega}_{\parallel}e^{i(\phi^{eF,\omega}+\phi^{oF,\omega})}+E^{eBeB,\omega}_{\parallel}e^{-i(2\phi^{eB,\omega})}+E^{oBoB,2\omega}_{\parallel}e^{-i(2\phi^{oB,\omega})}
 \\+&E^{eBoB,2\omega}_{\parallel}e^{-i(\phi^{eB,\omega}+\phi^{oB,\omega})}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}e^{i(\phi^{eF,\omega}-\phi^{oB,\omega})}+E^{oFeB,2\omega}_{\parallel}e^{i(\phi^{oF,\omega}-\phi^{eB,\omega})}
 \\+&E^{oFoB,2\omega}_{\parallel})_{Mi}=(E^{eF,2\omega}_{\parallel}+E^{oF,2\omega}_{\parallel}+E^{eB,2\omega}_{\parallel}+E^{oB,2\omega}_{\parallel}+E^{eFeF,2\omega}_{\parallel}+E^{oFoF,2\omega}_{\parallel}+E^{eFoF,2\omega}_{\parallel}
-\\+&E^{eBeB,2\omega}_{\parallel}+E^{oBoB,2\omega}_{\parallel}+E^{eBoB,2\omega}_{\parallel}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}+E^{oFeB,2\omega}_{\parallel}+E^{oFoB,2\omega}_{\parallel})_{Mi+1},1 \leq i \leq N-1 \hspace{0.5em}(13)
+\\+&E^{eBeB,2\omega}_{\parallel}+E^{oBoB,2\omega}_{\parallel}+E^{eBoB,2\omega}_{\parallel}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}+E^{oFeB,2\omega}_{\parallel}+E^{oFoB,2\omega}_{\parallel})_{Mi+1},1 \leq i \leq N-1 \hspace{0.5em}(14)
 \end{align}
 $$
 
@@ -196,7 +196,7 @@ $$
 \small
 \begin{align}
 (&E^{eF,2\omega}_{\parallel}+E^{oF,2\omega}_{\parallel}+E^{eB,2\omega}_{\parallel}+E^{oB,2\omega}_{\parallel}+E^{eFeF,2\omega}_{\parallel}+E^{oFoF,2\omega}_{\parallel}+E^{eFoF,2\omega}_{\parallel}+E^{eBeB,2\omega}_{\parallel}
-\\+&E^{oBoB,2\omega}_{\parallel}+E^{eBoB,2\omega}_{\parallel}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}+E^{oFeB,2\omega}_{\parallel}+E^{oFoB,2\omega}_{\parallel})_{MN}=E^{T,2\omega}_{\parallel}\hspace{5em}(14)
+\\+&E^{oBoB,2\omega}_{\parallel}+E^{eBoB,2\omega}_{\parallel}+E^{eFeB,2\omega}_{\parallel}+E^{eFoB,2\omega}_{\parallel}+E^{oFeB,2\omega}_{\parallel}+E^{oFoB,2\omega}_{\parallel})_{MN}=E^{T,2\omega}_{\parallel}\hspace{5em}(15)
 \end{align}
 $$
 
@@ -204,7 +204,7 @@ $$
 \small
 \begin{align}
 &H^{R,2\omega}_{\parallel}=(H^{eF,2\omega}_{\parallel}+H^{oF,2\omega}_{\parallel}+H^{eB,2\omega}_{\parallel}+H^{oB,2\omega}_{\parallel}+H^{eFeF,2\omega}_{\parallel}+H^{oFoF,2\omega}_{\parallel}+H^{eFoF,2\omega}_{\parallel}
-\\+&H^{eBeB,2\omega}_{\parallel}+H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{M1}\hspace{3em}(15)
+\\+&H^{eBeB,2\omega}_{\parallel}+H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{M1}\hspace{3em}(16)
 \end{align}
 $$
 
@@ -216,7 +216,7 @@ $$
 \\+&H^{oFoF,2\omega}_{\parallel}e^{i(2\phi^{oF,\omega})}+H^{eFoF,\omega}_{\parallel}e^{i(\phi^{eF,\omega}+\phi^{oF,\omega})}+H^{eBeB,\omega}_{\parallel}e^{-i(2\phi^{eB,\omega})}+H^{oBoB,2\omega}_{\parallel}e^{-i(2\phi^{oB,\omega})}
 \\+&H^{eBoB,2\omega}_{\parallel}e^{-i(\phi^{eB,\omega}+\phi^{oB,\omega})}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}e^{i(\phi^{eF,\omega}-\phi^{oB,\omega})}+H^{oFeB,2\omega}_{\parallel}e^{i(\phi^{oF,\omega}-\phi^{eB,\omega})}
 \\+&H^{oFoB,2\omega}_{\parallel})_{Mi}=(H^{eF,2\omega}_{\parallel}+H^{oF,2\omega}_{\parallel}+H^{eB,2\omega}_{\parallel}+H^{oB,2\omega}_{\parallel}+H^{eFeF,2\omega}_{\parallel}+H^{oFoF,2\omega}_{\parallel}+H^{eFoF,2\omega}_{\parallel}
-\\+&H^{eBeB,2\omega}_{\parallel}+H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{Mi+1},1 \leq i \leq N-1 \hspace{0.5em}(16)
+\\+&H^{eBeB,2\omega}_{\parallel}+H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{Mi+1},1 \leq i \leq N-1 \hspace{0.5em}(17)
 \end{align}
 $$
 
@@ -225,7 +225,7 @@ $$
 \small
 \begin{align}
 (&H^{eF,2\omega}_{\parallel}+H^{oF,2\omega}_{\parallel}+H^{eB,2\omega}_{\parallel}+H^{oB,2\omega}_{\parallel}+H^{eFeF,2\omega}_{\parallel}+H^{oFoF,2\omega}_{\parallel}+H^{eFoF,2\omega}_{\parallel}+H^{eBeB,2\omega}_{\parallel}
-\\+&H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{MN}=H^{T,2\omega}_{\parallel}\hspace{5em}(17)
+\\+&H^{oBoB,2\omega}_{\parallel}+H^{eBoB,2\omega}_{\parallel}+H^{eFeB,2\omega}_{\parallel}+H^{eFoB,2\omega}_{\parallel}+H^{oFeB,2\omega}_{\parallel}+H^{oFoB,2\omega}_{\parallel})_{MN}=H^{T,2\omega}_{\parallel}\hspace{5em}(18)
 \end{align}
 $$
 
@@ -244,7 +244,7 @@ A flowchart illustrating the procedure for solving the equations and boundary co
 
 **Figure 6** illustrates the calculation procedure of ♯SHAARP._ml_. With a given point group symmetry, dielectric tensor in the ZCS, and its orientation relative to the LCS coordinate system, ♯SHAARP._ml_ will then automatically determine the mutual relations among the four coordinates systems to map out the directions of the optical axes, anisotropic wavevectors, and the ordinary and the extraordinary waves. Solving the wave equation and the boundary conditions at $\omega$ frequencies yield anisotropic forward and backward propagating waves in each layer, $(\pmb{E}^{eF,\omega},\pmb{E}^{oF,\omega},\pmb{E}^{eB,\omega},\pmb{E}^{oB,\omega})_{Mi}$. The obtained sets of field strengths are the result of multiple reflections at the pump frequency. The generated nonlinear polarizations can thus be obtained using electric fields at  frequency and are the result of multiple reflections of the source waves. Further solving the wave equation at the nonlinear frequency can thus provide forward and backward homogeneous and inhomogeneous waves in the nonlinear mediums (14 waves in each NLO layer, 4 waves in the non-NLO layer). Finally, bringing all the waves together and carrying out boundary conditions at $2\omega$ frequency will provide both transmitted and reflected polarization-resolved nonlinear optical response.
 >![MethodF6.png](img/MethodF6.png)
->**Figure 2. Calculation procedure of ♯SHAARP.****_ml_****.** It considers the input calculation parameters regarding crystal information as well as optical properties, and generates the polarization-resolved nonlinear optical response. In semi-analytical expressions, the SHG tensor will be treated analytically, and the input of the SHG tensor is thus not required.
+>**Figure 6. Calculation procedure of ♯SHAARP._ml_.** It considers the input calculation parameters regarding crystal information as well as optical properties, and generates the polarization-resolved nonlinear optical response. In semi-analytical expressions, the SHG tensor will be treated analytically, and the input of the SHG tensor is thus not required.
 
 ## Reference
 1. Maker, P. D., Terhune, R. W., Nisenoff, M. & Savage, C. M. Effects of Dispersion and Focusing on the Production of Optical Harmonics. _Phys. Rev. Lett._ **8,** 21–22 (1962).

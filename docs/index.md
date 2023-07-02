@@ -15,8 +15,6 @@ This package builds in the most general approach to both analytically and numeri
 		The single interface package (**♯SHAARP**._si_) can be accessed using links: [GitHub](https://github.com/Rui-Zu/SHAARP), [Manual](https://shaarp.readthedocs.io/en/latest/) and [Tutorial Videos](https://www.youtube.com/watch?v=fr0RirVHXVc)
 
 
-
-
 # A primer of the theoretical background  
 
 As a very brief primer, Optical SHG describes the process where two photons of frequency $\omega$ interact with a nonlinear medium to create a photon at 2$\omega$, so called the SHG process. 
