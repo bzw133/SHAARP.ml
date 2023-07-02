@@ -1,4 +1,4 @@
-site_name: SHAARP
+site_name: SHAARP.ml
 
 markdown_extensions:
   - attr_list
