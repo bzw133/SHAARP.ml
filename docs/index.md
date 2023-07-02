@@ -1,8 +1,8 @@
-
-![GitHub release version](https://img.shields.io/github/v/release/Rui-Zu/SHAARP?color=%2350C878&include_prereleases)
+![GitHub release version](https://img.shields.io/github/v/release/bzw133/SHAARP.ml?color=%2350C878&include_prereleases)
 ![License](https://img.shields.io/github/license/Rui-Zu/SHAARP)
-![GitHub Size](https://img.shields.io/github/repo-size/Rui-Zu/SHAARP)
-
+![GitHub Size](https://img.shields.io/github/repo-size/bzw133/SHAARP.ml)
+[![HitCount](https://hits.dwyl.com/bzw133/shaarpml.svg?style=flat-square)](http://hits.dwyl.com/bzw133/shaarpml)
+[![HitCount](https://hits.dwyl.com/bzw133/shaarpml.svg?style=flat-square&show=unique)](http://hits.dwyl.com/bzw133/shaarpml)
 # Welcome to ♯SHAARP._ml_ 
 
 **♯SHAARP**._ml_ is an open-source package for modeling reflected and transmitted optical second harmonic generation (SHG) of a single-layer slab and multi-layer heterostructure of nonlinear optical materials. 
