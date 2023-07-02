@@ -18,13 +18,13 @@
 
 1. Unzip the file. Open the main notebook file `SHAARP_ml_V#.##.nb​` using **_Mathematica®_** or **Wolfram Player**.
 
-2. Making sure that Dynamic Evaluation is enabled, evaluate the notebook by clicking `Evaluation > Evaluate` from the menu bar. This process clears the definitions from the other currently open notebooks.
+2. Making sure that Dynamic Evaluation is enabled, evaluate the notebook by clicking `Evaluation > Evaluate Notebook` from the menu bar. This process clears the definitions from the other currently open notebooks.
 
 3. The main panel should now be visible after sometime. Please give at least 10 seconds for the initialization process. If you face issues, please re-evaluate the notebook or restart Mathematica. 
 	- See [Warning message of SHAARP](<FAQ.md#Warning message of SHAARP>) in [FAQ](FAQ.md)
 
 4. 
-   ![mainpanel](./img/mainpanel.png)
+   ![mainpanel](./img/readme-welcome.png)
 
    The main panel contains the following sub-panels:
 

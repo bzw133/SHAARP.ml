@@ -7,6 +7,7 @@ We start by discussing the experimental details before proceeding to simulate th
 - Open `SHAARP.ml_Vx.xx.nb` in _Mathematica®_. Evaluate the notebook by clicking `Evaluation > Evaluate Notebook`. Ensure that Dynamic Evaluation is enabled in _Mathematica®_. If everything goes right, the user guide should be visible in the notebook as shown below.
 
    ![good](./img/good.png)
+   
    In case the above is not seen, please re-evaluate the notebook or restart _Mathematica®_ and try again.
 
 -  In the functionality sub-panel of the input panel on the left, click `Set Material Properties` to define the multilayer.
