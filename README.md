@@ -62,13 +62,13 @@ Key features of **♯SHAARP**._ml_ include:
 	- Wave propagation plots
 	- Reflectance and transmittance (Fresnel coefficients) of linear waves 
 	- Maker fringes of SHG waves
-!  LNO-full-sim.png](<docs/img/LNO-full-sim.png>)
+  ![LNO-full-sim.png](<docs/img/LNO-full-sim.png>)
 - 3D schematics of polarizer and analyzer and ellipticity of waves 
   ![pol.png](<docs/img/pol.png>)
 - Partial analytical solutions of a 300 $\mu m$-thick Z-cut Quartz slab
 	- with slab thickness (h1) and SHG d33 and d14 coefficients as unknown variables
 	- full multiple reflection assumption
-![quartz-full-analytic.png](<docs/img/quartz-full-analtic.png>)
+  ![quartz-full-analytic.png](<docs/img/quartz-full-analytic.png>)
 
 # To learn more
 
