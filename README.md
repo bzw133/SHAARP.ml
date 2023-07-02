@@ -42,16 +42,16 @@ Key features of **♯SHAARP**._ml_ include:
 - Open SHAARP.ml.nb 
 - Make sure that Dynamic Evaluation is enabled, evaluate the notebook by clicking `Evaluation > Evaluate Notebook` from the menu bar. Note that this process clears all the definitions from the other currently open notebooks. 
 - You will get the welcome page as: 
-  ![[readme-welcome.png]]
+  ![readme-welcome.png](<docs/img/readme-welcome.png>)
 
 ## Run the default case study 
 - There is a default single slab system (1 $\mu m$-thick Z-cut LiNbO3 slab, incident wavelength = 1.064 $\mu m$) for quick test calculation.
 - To visualize the setup of the system, click `Set Material Properties` in the `Functionality` subpanel, and then click `Update`. You will get: 
-  ![[LNO-setup.png]]
+  ![LNO-setup.png](<docs/img/LNO-setup.png>)
 - To simulation the SHG response of the system, click `SHG Simulation` in the `Functionality` subpanel, and then click `Update`. You will get: 
-  ![[LNO-sim.png]]
+  ![LNO-sim.png](<docs/img/LNO-sim.png>)
 - To obtain the partial analytical expressions of the SHG responses, click `Partial Analytical Expressions`, and then click `Update`. You will get: 
-  ![[readme-analytic.png]]
+  ![readme-analytic.png](<docs/img/readme-analytic.png>)
 - For advanced usage such as Maker fringes simulation, please refer to the  [documentation](https://shaarpml.readthedocs.io/en/latest/ ). 
 
 
