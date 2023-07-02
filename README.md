@@ -14,15 +14,15 @@ This package builds upon a general approach to solve the Maxwell equations under
 
 # Features and Applications 
 
-**♯SHAARP**._ml_ exhibits unique features for modeling the SHG responses with flexibility, high-fidelity, high accuracy, high efficiency, user-friendliness, and extensibility.   
+**♯SHAARP**._ml_ exhibits unique features for modeling the SHG responses with **flexibility, high-fidelity, high accuracy, high efficiency, user-friendliness, and extensibility**.   
 
 Key features of **♯SHAARP**._ml_ include:  
-- Flexibility in defining the multilayer structure, materials properties, incident lights, and assumptions for the SHG polarization   
-- High-fidelity as verified by benchmarking with established analytical theories in literature and experimental validation of more than eight material systems  
-- High accuracy as the solutions are all semi-analytical with minimal numerical approximations  
-- High efficiency as it typically takes a few seconds calculation time for single incidence of multilayers (tested with heterostructure consisting of eight different SHG active layers) 
-- User-friendliness with well-designed GUI and documentations, more than ten preset cases studies and tutorials videos
-- Extensibility as it is programmable with modularized functions beside the GUI   
+- **Flexibility** 🌈: User have freedom in defining the multilayer structure, materials properties, incident lights, and assumptions for the SHG polarization. 
+- **High-fidelity** ✔: The calculation results of **♯SHAARP**._ml_ have been verified by benchmarking with established analytical theories in literature and experimental validation of more than eight material systems  
+- **High accuracy**🎯: The solutions are all semi-analytical with minimal numerical approximations.   
+- **High efficiency** 🚀: It typically takes just a few seconds to calculate the result for a single incidence and a few minutes for a parametric study such as Maker fringes simulation.  
+- **User-friendliness** 👍: With well-designed GUI and documentations, more than ten preset cases studies and tutorials videos
+- **Extensibility**💻: Beside the GUI, it is programmable with modularized functions.   
 
 **♯SHAARP**._ml_ is designed for two types of studies:  
 1. To numerically simulate SHG responses of nonlinear optical materials and  heterostructures  
