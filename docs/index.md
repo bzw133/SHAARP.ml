@@ -1,15 +1,15 @@
 ![GitHub release version](https://img.shields.io/github/v/release/bzw133/SHAARP.ml?color=%2350C878&include_prereleases)
 ![License](https://img.shields.io/github/license/Rui-Zu/SHAARP)
 ![GitHub Size](https://img.shields.io/github/repo-size/bzw133/SHAARP.ml)
-[![HitCount](https://hits.dwyl.com/bzw133/shaarpml.svg?style=flat-square)](http://hits.dwyl.com/bzw133/shaarpml)
-[![HitCount](https://hits.dwyl.com/bzw133/shaarpml.svg?style=flat-square&show=unique)](http://hits.dwyl.com/bzw133/shaarpml)
+[![HitCount](https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2Fbzw133%2Fshaarpml.json&label=total%20hits&color=green)]
+[![HitCount](https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2Fbzw133%2Fshaarpml.json&label=unique%20hits&color=pink)]
 # Welcome to ♯SHAARP._ml_ 
 
-**♯SHAARP**._ml_ is an open-source package for modeling reflected and transmitted optical second harmonic generation (SHG) of a single-layer slab and multi-layer heterostructure of nonlinear optical materials. 
+[**♯SHAARP**._ml_](https://github.com/bzw133/SHAARP.ml) is an open-source package for modeling reflected and transmitted optical second harmonic generation (SHG) of a single-layer slab and multi-layer heterostructure of nonlinear optical materials. 
 
 This package builds in the most general approach to both analytically and numerically solving the SHG response of various materials systems. The package is designed to handle **arbitrary number of layers, number of SHG active mediums, crystal symmetry, arbitrary orientation, complex refractive indices, and arbitrary polarization state of light** (e.g., linearly, circularly, elliptically polarized). The two most common SHG characterization approaches, Maker fringes and polarimetry, are integrated into the package. 
 
-**♯SHAARP**._ml_ is also a successor of the **♯SHAARP**._si_, which was designed for modeling the reflected SHG responses for an single interface.  
+**♯SHAARP**._ml_ is also a successor of the [**♯SHAARP**._si_](https://github.com/Rui-Zu/SHAARP), which was designed for modeling the reflected SHG responses for an single interface.  
 
 !!! note
 		The single interface package (**♯SHAARP**._si_) can be accessed using links: [GitHub](https://github.com/Rui-Zu/SHAARP), [Manual](https://shaarp.readthedocs.io/en/latest/) and [Tutorial Videos](https://www.youtube.com/watch?v=fr0RirVHXVc)
