@@ -1,6 +1,13 @@
-## initialization of ♯SHAARP._ml_ 
+## Good practice when using ♯SHAARP._ml_
+- It is recommended one should **NOT** save the SHAARP._ml_.nb.
+- All postprocess should be performed in a separate notebook. 
+- If for any reason you would like to save SHAARP._ml_.nb, always "Delete All Output" (from the drop-down menu `Cell` of Mathematica) before saving. Otherwise, there will issues with the preexisting "ghost" GUI when re-opening the same notebook next time.
+
+## Initialization of ♯SHAARP._ml_ 
 - Q: Why doesn't main panel show up?
-- A: It usually takes 20 ~ 30s for the initialization depending on the configuration of hardware. 
+- A: It usually takes up to 20 ~ 30s for the initialization depending on the configuration of hardware.
+- Q: Cannot initialize `SHAARP_Init.nb` 
+- A: Make sure the initialization notebook `setup.nb` is inside the same folder of `SHAARP.ml.nb`. 
 
 ## Warning message of ♯SHAARP._ml_ 
 - Q: Why there are warning signs before progress bar?
@@ -20,10 +27,11 @@
 >![BeforeDrag.png](img/BeforeDrag.png)
 >The initial cropped display.
 
-
 >![AfterDrag.png](img/AfterDrag.png)
->Display after adjusting the output size using the bottom right triangle 
-## Initialization of SHAAP 
-- Q: Cannot initialize `SHAARP_Init.nb` 
-- A: Make sure the initialization notebook `SHAARP_Init.nb` is inside the same folder of `SHAARP_SI_Vxx.nb`. 
-	- Otherwise, try to explicitly give the absolute path of `SHAARP_Init.nb`, just like 
+>Display after adjusting the output size using the bottom right triangle
+
+- Note 1: If the expression is too large to show, ♯SHAARP._ml_ will automatically hide it. The user can Export it into a ".mx" file and save to local by click the "Export" button. Then the "*.mx" file can be import in a separate notebook even after closing the ♯SHAARP._ml_ notebooks. 
+- Note 2: If the expression is too large to show, "Copy" is not recommended because it may cause crush of Mathematica. Please use "Export" instead and then Simplify it. 
+
+## Mathematica crushes when executing ♯SHAARP._ml_ (Error messages keep printing out and never cease even click Abort) 
+- When this happens, you will have to either kill the process of Mathematica software or the Wolfram Kernel in the Task Manager. In either case, you will lose the unsaved status of the notebook.    
