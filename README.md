@@ -10,7 +10,9 @@
 
 This package builds upon a general approach to solve the Maxwell equations under proper boundary conditions to obtain the SHG responses of various materials systems. The package is designed to handle **arbitrary number of layers, number of SHG active media, crystal symmetry, crystal orientations, complex refractive indices, and polarized incident lights**. The two most common SHG characterization approaches, Maker fringes and polarimetry, are integrated into the package. 
 
-**♯SHAARP**._ml_ is also a successor of the **♯SHAARP**._si_, which was designed for modeling the reflected SHG responses of a single-interface system.  
+**♯SHAARP**._ml_ is also a successor of the [**♯SHAARP**._si_](https://github.com/Rui-Zu/SHAARP), which was designed for modeling the reflected SHG responses of a single-interface system. 
+
+You can find detailed [documentation of **♯SHAARP**._ml_ here](https://shaarpml.readthedocs.io/en/latest/). 
 
 # Features and Applications 
 
