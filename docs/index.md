@@ -29,6 +29,23 @@ Beside the three 3D coordinate systems, another 2D coordinate system is useful t
 A clear understanding of the relationships between these concepts is highly recommended to successfully employ **♯SHAARP**._ml_ to obtain reasonable results and draw reliable comparison with experiments. We have tried to make it clear for new users by incorporating several interactive 2D and 3D illustrations in the GUI. 
 
 
+# Links 
+- Code repository of **♯SHAARP**._ml_: https://github.com/bzw133/SHAARP.ml
+- Documentation of **♯SHAARP**._ml_: https://shaarpml.readthedocs.io/en/latest/ 
+- Tutorial videos **♯SHAARP**._ml_: https://youtu.be/YiKRm6i7kNs
+- The **♯SHAARP** package for single interface (**♯SHAARP**._si_): 
+	- Code repository: https://github.com/Rui-Zu/SHAARP
+	- Documentation: https://shaarp.readthedocs.io/en/latest/
+	- Tutorial videos: https://www.youtube.com/watch?v=fr0RirVHXVc
+
+# Referencing
+If you've used **♯SHAARP**._ml_ in any publication of you, please cite the references:
+1. **Zu, R., Wang, B., He, J. et al. Optical Second Harmonic Generation in Anisotropic Multilayers with Complete Multireflection Analysis** **of Linear and Nonlinear Waves using ♯SHAARP._ml_ Package, (2023), arXiv:2307.01368. [https://doi.org/10.48550/arXiv.2307.01368]**
+2. **Zu, R., Wang, B., He, J. et al. Analytical and numerical modeling of optical second harmonic generation in anisotropic crystals using ♯SHAARP package. npj Comput Mater 8, 246 (2022). [https://doi.org/10.1038/s41524-022-00930-4](https://doi.org/10.1038/s41524-022-00930-4)**
+
+# Acknowledgement
+This development of the software was supported as part of the Computational Materials Sciences Program funded by the U.S. Department of Energy, Office of Science, Basic Energy Sciences, under Award No. DE-SC0020145.
+
 # Project outline
 
 ### [Install](install.md)
