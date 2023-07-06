@@ -90,7 +90,7 @@ Key features of **♯SHAARP**._ml_ include:
 
 ## Referencing
 If you've used **♯SHAARP**._ml_ in any publication of you, please cite the references:
-1. **Zu, R., Wang, B., He, J. et al. Optical Second Harmonic Generation in Anisotropic Multilayers with Complete Multireflection Analysis** **of Linear and Nonlinear Waves using ♯SHAARP._ml_ Package, (2023), arxiv.**
+1. **Zu, R., Wang, B., He, J. et al. Optical Second Harmonic Generation in Anisotropic Multilayers with Complete Multireflection Analysis** **of Linear and Nonlinear Waves using ♯SHAARP._ml_ Package, (2023), arXiv:2307.01368. [https://doi.org/10.48550/arXiv.2307.01368]**
 2. **Zu, R., Wang, B., He, J. et al. Analytical and numerical modeling of optical second harmonic generation in anisotropic crystals using ♯SHAARP package. npj Comput Mater 8, 246 (2022). [https://doi.org/10.1038/s41524-022-00930-4](https://doi.org/10.1038/s41524-022-00930-4)**
 
 ## Acknowledgement
