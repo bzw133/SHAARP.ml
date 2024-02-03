@@ -49,28 +49,28 @@ Key features of **♯SHAARP**._ml_ include:
 ## Run the default case study 
 - There is a default single slab system (1 $\mu m$-thick Z-cut LiNbO3 slab, incident wavelength = 1.064 $\mu m$) for quick test calculation.
 - To visualize the setup of the system, click `Set Material Properties` in the `Functionality` subpanel, and then click `Update`. You will get: 
-  ![LNO-setup.png](<docs/img/LNO-setup.png>)
+  ![LNO-setup.png](https://github.com/bzw133/SHAARP.ml/blob/main/docs/img/LNO-setup.png)
 - To simulation the SHG response of the system, click `SHG Simulation` in the `Functionality` subpanel, and then click `Update`. You will get: 
-  ![LNO-sim.png](<docs/img/LNO-sim.png>)
+  ![LNO-sim.png](https://github.com/bzw133/SHAARP.ml/blob/main/docs/img/LNO-sim.png)
 - To obtain the partial analytical expressions of the SHG responses, click `Partial Analytical Expressions`, and then click `Update`. You will get: 
-  ![readme-analytic.png](<docs/img/readme-analytic.png>)
+  ![readme-analytic.png](https://github.com/bzw133/SHAARP.ml/blob/main/docs/img/readme-analytic.png)
 - For advanced usage such as Maker fringes simulation, please refer to the  [documentation](https://shaarpml.readthedocs.io/en/latest/ ). 
 
 
 # Gallery
 - Arbitrary number of layers with a mixture of linear and SHG active materials 
-  ![8-layer-structure.png](<docs/img/8-layer-structure.png>)
+  ![8-layer-structure.png](https://github.com/bzw133/SHAARP.ml/blob/main/docs/img/8-layer-structure.png)
 - Full SHG simulation results of a 100 $\mu m$-thick Z-cut LiNbO3 slab (with JK assumptions), including  
 	- Wave propagation plots
 	- Reflectance and transmittance (Fresnel coefficients) of linear waves 
 	- Maker fringes of SHG waves
-  ![LNO-full-sim.png](<docs/img/LNO-full-sim.png>)
+  ![LNO-full-sim.png](https://github.com/bzw133/SHAARP.ml/blob/main/docs/img/LNO-full-sim.png)
 - 3D schematics of polarizer and analyzer and ellipticity of waves 
-  ![pol.png](<docs/img/pol.png>)
+  ![pol.png](https://github.com/bzw133/SHAARP.ml/blob/main/docs/img/pol.png)
 - Partial analytical solutions of a 300 $\mu m$-thick Z-cut Quartz slab
 	- with slab thickness (h1) and SHG d33 and d14 coefficients as unknown variables
 	- full multiple reflection assumption
-  ![quartz-full-analytic.png](<docs/img/quartz-full-analytic.png>)
+  ![quartz-full-analytic.png](https://github.com/bzw133/SHAARP.ml/blob/main/docs/img/quartz-full-analytic.png)
 
 # To learn more
 
