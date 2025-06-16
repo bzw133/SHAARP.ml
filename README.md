@@ -1,6 +1,7 @@
 ![GitHub release version](https://img.shields.io/github/v/release/bzw133/SHAARP.ml?color=%2350C878&include_prereleases)
 ![License](https://img.shields.io/github/license/Rui-Zu/SHAARP)
 ![GitHub Size](https://img.shields.io/github/repo-size/bzw133/SHAARP.ml)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fbzw133%2FSHAARP.ml&countColor=%23263759&style=flat)
 ![HitCount](https://hits.dwyl.com/bzw133/shaarpml.svg?style=flat-square&show=unique)
 ![HitCount](https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2Fbzw133%2Fshaarpml.json&label=total%20hits&color=pink)
 
